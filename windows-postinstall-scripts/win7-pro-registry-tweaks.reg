@@ -1,0 +1,96 @@
+Windows Registry Editor Version 5.00
+;CONTROL PANEL;
+;-Action Center-;
+;User Account Control settings
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"VerboseStatus"=dword:00000001
+"ConsentPromptBehaviorAdmin"=dword:00000000
+"PromptOnSecureDesktop"=dword:00000000
+"EnableLUA"=dword:00000001
+
+;-AutoPlay-;
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ShellHWDetection]
+"Start"=dword:00000004
+
+;-Date and Time-;
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]
+"TimeZoneKeyName"="Azerbaijan Standard Time"
+
+[HKEY_CURRENT_USER\Control Panel\International]
+"iFirstDayOfWeek"="0"
+"sShortDate"="yyyy-MM-dd"
+"sLongDate"="MMMM d, yyyy"
+"sShortTime"="HH:mm"
+"sTimeFormat"="HH:mm:ss"
+
+;-Folder Options-;
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"TaskbarGlomLevel"=dword:00000002
+"Start_TrackDocs"=dword:00000000
+"Hidden"=dword:00000001
+"HideFileExt"=dword:00000000
+
+;-Internet Options-;
+;Proxy
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]
+"AutoConfigURL"="https://antizapret.prostovpn.org:8443/proxy.pac"
+
+;-Mouse-;
+[HKEY_CURRENT_USER\Control Panel\Mouse]
+"MouseSensitivity"="10"
+"SmoothMouseXCurve"=hex:\
+	00,00,00,00,00,00,00,00,\
+	70,3D,0A,00,00,00,00,00,\
+	E0,7A,14,00,00,00,00,00,\
+	50,B8,1E,00,00,00,00,00,\
+	C0,F5,28,00,00,00,00,00
+"SmoothMouseYCurve"=hex:\
+	00,00,00,00,00,00,00,00,\
+	00,00,38,00,00,00,00,00,\
+	00,00,70,00,00,00,00,00,\
+	00,00,A8,00,00,00,00,00,\
+	00,00,E0,00,00,00,00,00
+
+[HKEY_USERS\.DEFAULT\Control Panel\Mouse]
+"MouseSpeed"="0"
+"MouseThreshold1"="0"
+"MouseThreshold2"="0"
+
+;-Notification Area Icons-;
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"EnableAutoTray"=dword:00000000
+
+;-Personalization-;
+;Change desktop icons
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+"{645FF040-5081-101B-9F08-00AA002F954E}"=dword:00000001
+
+;-System-;
+;System protection
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore]
+"DisableSR"=dword:00000001
+
+;-Taskbar and Start Menu-;
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoRecentDocsHistory"=dword:00000001
+"ForceClassicControlPanel"=dword:00000001
+
+;-Windows Defender-;
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender]
+"DisableAntiSpyware"=dword:00000001
+
+;-Windows Firewall-;
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mpssvc]
+"Start"=dword:00000004
+
+;-Windows Update-;
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAutoUpdate"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MRT]
+"DontOfferThroughWUAU"=dword:00000001
+
+;ADDITIONAL TWEAKS;
+;Services
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DiagTrack]
+"Start"=dword:00000004
