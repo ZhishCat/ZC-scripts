@@ -1,5 +1,5 @@
 %1 start "" mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd.exe","/c pushd ""%~dp0"" && ""%~s0"" ::","","runas",1)(window.close)&&exit
-for /f "skip=2 tokens=1,2*" %%I in ('%SystemRoot%\System32\reg.exe query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v ProductName 2^>nul') do if /I "%%I" == "ProductName" set "WindowsProduct=%%K"
+for /f "skip=2 tokens=1,2*" %%I in ('%SystemRoot%\System32\reg.exe query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v ProductName 2^>nul') do if /i "%%I" == "ProductName" set "WindowsProduct=%%K"
 if "%WindowsProduct%"=="Windows 7 Professional" (goto Win7Pro)
 if "%WindowsProduct%"=="Windows 10 Enterprise LTSC 2021" (goto Win10LTSC21H2)
 if "%WindowsProduct%"=="Windows 10 Enterprise LTSC 2021 Evaluation" (goto Win10LTSC21H2)
