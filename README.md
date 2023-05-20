@@ -3,6 +3,7 @@
 
 ### These pieces of code were combined together from following websites:
 + https://www.sevenforums.com/
++ https://www.eightforums.com/
 + https://www.tenforums.com/
 + https://admx.help/
 + https://stackoverflow.com
