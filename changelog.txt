@@ -1,0 +1,5 @@
+2023-05-20T01:05+00:00 windows-postinstall-scripts
+Added settings for Windows 8.1 Embedded, removed unnecessary cd /d "%~dp0" lines, set Google DNS servers to "Ethernet" interface, merged setx lines, removed several comment lines in win7 and win10 REG files.
+
+2023-05-20T14:57+00:00 windows-postinstall-scripts
+Added several lines from win8-embedded-industry-pro REG file to win7-pro REG file.

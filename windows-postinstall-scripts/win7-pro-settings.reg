@@ -1,11 +1,17 @@
 Windows Registry Editor Version 5.00
 ;CONTROL PANEL;
 ;-Action Center-;
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SQMClient\Windows]
+"CEIPEnable"=dword:00000000
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
 "VerboseStatus"=dword:00000001
 "ConsentPromptBehaviorAdmin"=dword:00000000
 "PromptOnSecureDesktop"=dword:00000000
 "EnableLUA"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting\Consent]
+"DefaultConsent"=dword:00000000
 
 ;-AutoPlay-;
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ShellHWDetection]
