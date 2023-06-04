@@ -1,4 +1,4 @@
-# A collection of scripts made by SleepingCatSC
+# A collection of scripts made by ZhishCat
 ### Do whatever you want with that scripts. No licenses are going to be applied.
 
 ### These pieces of code were combined together from following websites:
