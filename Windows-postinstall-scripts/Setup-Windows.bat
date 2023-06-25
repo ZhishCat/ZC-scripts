@@ -26,7 +26,7 @@ bcdedit /set {current} quietboot yes
 setx TEMP C:\TEMP & setx TEMP C:\TEMP /m & setx TMP C:\TEMP & setx TMP C:\TEMP /m
 netsh interface ipv4 set dnsservers "Ethernet" static 8.8.8.8 primary
 netsh interface ipv4 add dnsservers "Ethernet" 8.8.4.4 index=2
-reg import win7-pro-settings.reg
+reg import Win7-Pro-settings.reg
 exit
 
 :Win8EmbeddedIndustryPro
@@ -53,7 +53,7 @@ bcdedit /set {current} quietboot yes
 setx TEMP C:\TEMP & setx TEMP C:\TEMP /m & setx TMP C:\TEMP & setx TMP C:\TEMP /m
 netsh interface ipv4 set dnsservers "Ethernet" static 8.8.8.8 primary
 netsh interface ipv4 add dnsservers "Ethernet" 8.8.4.4 index=2
-reg import win8-embedded-industry-pro-settings.reg
+reg import Win8-Embedded-Industry-Pro-settings.reg
 cscript %windir%\System32\slmgr.vbs /ipk M9Q9P-WNJJT-6PXPY-DWX8H-6XWKK
 cscript %windir%\System32\slmgr.vbs /skms kms8.msguides.com
 cscript %windir%\System32\slmgr.vbs /ato
@@ -79,7 +79,7 @@ bcdedit /set {current} quietboot yes
 setx TEMP C:\TEMP & setx TEMP C:\TEMP /m & setx TMP C:\TEMP & setx TMP C:\TEMP /m
 netsh interface ipv4 set dnsservers "Ethernet" static 8.8.8.8 primary
 netsh interface ipv4 add dnsservers "Ethernet" 8.8.4.4 index=2
-reg import win10-ltsc-21h2-settings.reg
+reg import Win10-LTSC-21H2-settings.reg
 xcopy /e skus %WINDIR%\System32\spp\tokens\skus
 cscript %WINDIR%\System32\slmgr.vbs /rilc
 cscript %WINDIR%\System32\slmgr.vbs /upk >nul 2>&1
