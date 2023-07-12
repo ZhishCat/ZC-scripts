@@ -6,6 +6,6 @@
 + https://www.eightforums.com/
 + https://www.tenforums.com/
 + https://admx.help/
-+ https://stackoverflow.com
++ https://stackoverflow.com/
 
 Complexed implementations were blatently stolen from StackOverflow.
