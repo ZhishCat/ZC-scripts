@@ -1,11 +1,11 @@
 # A collection of scripts made by ZhishCat
-### Do whatever you want with that scripts. No licenses are going to be applied.
+### Do whatever you want with these scripts. These scripts will have no license.
 
-### These pieces of code were combined together from following websites:
+### These pieces of code were assembled from the following websites:
 + https://www.sevenforums.com/
 + https://www.eightforums.com/
 + https://www.tenforums.com/
 + https://admx.help/
 + https://stackoverflow.com/
 
-Complexed implementations were blatently stolen from StackOverflow.
+Complex implementations were blatantly stolen from Stack Overflow.
