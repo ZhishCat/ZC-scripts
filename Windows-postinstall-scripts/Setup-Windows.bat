@@ -1,10 +1,10 @@
-cd /d "%~dp0"
-%1 start "" mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd.exe","/c pushd ""%~dp0"" && ""%~s0"" ::","","runas",1)(window.close)&&exit
+cd /d "%~DP0"
+%1 start "" mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd.exe","/c pushd ""%~DP0"" && ""%~S0"" ::","","runas",1)(window.close)&&exit
 for /f "skip=2 tokens=1,2*" %%I in ('%SystemRoot%\System32\reg.exe query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v ProductName 2^>nul') do if /i "%%I" == "ProductName" set "WindowsProduct=%%K"
 if "%WindowsProduct%"=="Windows 7 Professional" (goto Win7Pro)
 if "%WindowsProduct%"=="Windows Embedded 8.1 Industry Pro" (goto Win8EmbeddedIndustryPro)
-if "%WindowsProduct%"=="Windows 10 Enterprise LTSC 2021" (goto Win10LTSC21H2)
-if "%WindowsProduct%"=="Windows 10 Enterprise LTSC 2021 Evaluation" (goto Win10LTSC21H2)
+if "%WindowsProduct%"=="Windows 10 Enterprise LTSC 2021" (goto Win10LTSC2021)
+if "%WindowsProduct%"=="Windows 10 Enterprise LTSC 2021 Evaluation" (goto Win10LTSC2021)
 
 :Win7Pro
 powercfg /s 381b4222-f694-41f0-9685-ff5bb260df2e
@@ -54,12 +54,12 @@ setx TEMP C:\TEMP & setx TEMP C:\TEMP /m & setx TMP C:\TEMP & setx TMP C:\TEMP /
 netsh interface ipv4 set dnsservers "Ethernet" static 8.8.8.8 primary
 netsh interface ipv4 add dnsservers "Ethernet" 8.8.4.4 index=2
 reg import Win8-Embedded-Industry-Pro-settings.reg
-cscript %windir%\System32\slmgr.vbs /ipk M9Q9P-WNJJT-6PXPY-DWX8H-6XWKK
-cscript %windir%\System32\slmgr.vbs /skms kms8.msguides.com
-cscript %windir%\System32\slmgr.vbs /ato
+cscript %WINDIR%\System32\slmgr.vbs /ipk M9Q9P-WNJJT-6PXPY-DWX8H-6XWKK
+cscript %WINDIR%\System32\slmgr.vbs /skms kms8.msguides.com
+cscript %WINDIR%\System32\slmgr.vbs /ato
 exit
 
-:Win10LTSC21H2
+:Win10LTSC2021
 powercfg /s 381b4222-f694-41f0-9685-ff5bb260df2e
 powercfg /x monitor-timeout-ac 15
 powercfg /x monitor-timeout-dc 15
@@ -79,7 +79,7 @@ bcdedit /set {current} quietboot yes
 setx TEMP C:\TEMP & setx TEMP C:\TEMP /m & setx TMP C:\TEMP & setx TMP C:\TEMP /m
 netsh interface ipv4 set dnsservers "Ethernet" static 8.8.8.8 primary
 netsh interface ipv4 add dnsservers "Ethernet" 8.8.4.4 index=2
-reg import Win10-LTSC-21H2-settings.reg
+reg import Win10-LTSC-2021-settings.reg
 xcopy /e skus %WINDIR%\System32\spp\tokens\skus
 cscript %WINDIR%\System32\slmgr.vbs /rilc
 cscript %WINDIR%\System32\slmgr.vbs /upk >nul 2>&1
