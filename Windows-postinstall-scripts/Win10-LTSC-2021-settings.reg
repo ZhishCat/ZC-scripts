@@ -315,6 +315,9 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dmwappushservice]
 "Start"=dword:00000004
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat]
+"DisablePCA"=dword:00000001
+
 ;Programs and Features uninstall confirmation prompt box
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\DontShowMeThisDialogAgain]
 "{948e51fb-0a48-44f0-86ac-33c36def540c}"="NO"
