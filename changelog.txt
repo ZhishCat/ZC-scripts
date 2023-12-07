@@ -2,10 +2,13 @@
 Added settings for Windows 8.1 Embedded, removed unnecessary cd /d "%~dp0" lines, set Google DNS servers to "Ethernet" interface, merged setx lines, and removed several comment lines in Win7 and Win10 REG files.
 
 2023-05-20T14:57+00:00 windows-postinstall-scripts
-I added several lines from the Win8-Embedded-Industry-Pro REG file to the Win7-Pro REG file.
+Several lines from Win8-Embedded-Industry-Pro-settings.reg were copied to Win7-Pro-settings.reg.
 
 2023-06-25T22:53+00:00
 Slowly moving away from all lowercase file naming, I renamed several files and folders. Scripts changed correspondingly.
 
 2023-08-26T00:40+00:00
-Disabled Program Compatibility Assistant via Group Policy setting in all REG files
+Disabled Program Compatibility Assistant via Group Policy setting in all REG files.
+
+2023-12-07T14:00+00:00
+Windows 11 setup script and settings.

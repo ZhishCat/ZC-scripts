@@ -101,8 +101,7 @@ Windows Registry Editor Version 5.00
 "AppsUseLightTheme"=dword:00000000
 "EnableTransparency"=dword:00000000
 
-;Themes
-;Desktop icon settings
+;Themes - Desktop icon settings
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
 "{645FF040-5081-101B-9F08-00AA002F954E}"=dword:00000001
 
