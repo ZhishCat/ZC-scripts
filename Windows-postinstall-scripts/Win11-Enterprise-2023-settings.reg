@@ -141,22 +141,22 @@ Windows Registry Editor Version 5.00
 "AppCaptureEnabled"=dword:00000000 ; Record game clips and screenshots using Game DVR (Off)
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Sense]
-"Start"=dword:00000003 ; Services > Windows Defender Advanced Threat Protection Service (Manual) Windows Defender Advanced Threat Protection service helps protect against advanced threats by monitoring and reporting security events that happen on the computer.
+"Start"=dword:00000004 ; Services > Windows Defender Advanced Threat Protection Service (Disabled) Windows Defender Advanced Threat Protection service helps protect against advanced threats by monitoring and reporting security events that happen on the computer.
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdBoot]
-"Start"=dword:00000003
+"Start"=dword:00000004
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdFilter]
-"Start"=dword:00000003
+"Start"=dword:00000004
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdNisDrv]
-"Start"=dword:00000003
+"Start"=dword:00000004
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdNisSvc]
-"Start"=dword:00000003 ; Services > Microsoft Defender Antivirus Network Inspection Service (Manual) Helps guard against intrusion attempts targeting known and newly discovered vulnerabilities in network protocols
+"Start"=dword:00000004 ; Services > Microsoft Defender Antivirus Network Inspection Service (Disabled) Helps guard against intrusion attempts targeting known and newly discovered vulnerabilities in network protocols
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinDefend]
-"Start"=dword:00000003 ; Services > Microsoft Defender Antivirus Service (Manual) Helps protect users from malware and other potentially unwanted software
+"Start"=dword:00000004 ; Services > Microsoft Defender Antivirus Service (Disabled) Helps protect users from malware and other potentially unwanted software
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MpsSvc]
 "Start"=dword:00000004 ; Services > Windows Defender Firewall (Disabled) Windows Defender Firewall helps protect your computer by preventing unauthorized users from gaining access to your computer through the Internet or a network.
