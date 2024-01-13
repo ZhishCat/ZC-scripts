@@ -1,5 +1,5 @@
 # A collection of scripts made by ZhishCat
-### Do whatever you want with these scripts. These scripts will have no license.
+### Do whatever you want with these scripts. These scripts have no license.
 
 ### These pieces of code were assembled from the following websites:
 + https://www.sevenforums.com/
