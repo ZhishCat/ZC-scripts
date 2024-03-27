@@ -22,6 +22,7 @@ schtasks /change /disable /tn "\Microsoft\Windows\Windows Defender\Windows Defen
 bcdedit /deletevalue useplatformclock
 bcdedit /set {current} quietboot yes
 setx TEMP C:\TEMP & setx TEMP C:\TEMP /m & setx TMP C:\TEMP & setx TMP C:\TEMP /m
+netsh advfirewall set allprofiles state off
 netsh interface ipv4 set dnsservers "Ethernet" static 8.8.8.8 primary
 netsh interface ipv4 add dnsservers "Ethernet" 8.8.4.4 index=2
 takeown /f "%WINDIR%\System32\smartscreen.exe"

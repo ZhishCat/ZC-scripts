@@ -158,9 +158,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinDefend]
 "Start"=dword:00000004 ; Services > Microsoft Defender Antivirus Service (Disabled) Helps protect users from malware and other potentially unwanted software
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MpsSvc]
-"Start"=dword:00000004 ; Services > Windows Defender Firewall (Disabled) Windows Defender Firewall helps protect your computer by preventing unauthorized users from gaining access to your computer through the Internet or a network.
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\FindMyDevice]
 "AllowFindMyDevice"=dword:00000000 ; Privacy & security > Find my device (Off, GPO)
 

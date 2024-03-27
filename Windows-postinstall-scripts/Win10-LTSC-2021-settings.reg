@@ -85,11 +85,6 @@ Windows Registry Editor Version 5.00
 "NotifyOnWeakCharger"=dword:00000000
 
 ;-Network & Internet-;
-;Status
-;Windows Firewall
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MpsSvc]
-"Start"=dword:00000004
-
 ;Proxy
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]
 "AutoConfigURL"="https://antizapret.prostovpn.org:8443/proxy.pac"
@@ -320,6 +315,13 @@ Windows Registry Editor Version 5.00
 ;Programs and Features uninstall confirmation prompt box
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\DontShowMeThisDialogAgain]
 "{948e51fb-0a48-44f0-86ac-33c36def540c}"="NO"
+
+;Microsoft Edge policies
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
+"BrowserSignin"=dword:00000000
+"PersonalizationReportingEnabled"=dword:00000000
+"ShowRecommendationsEnabled"=dword:00000000
+"HideFirstRunExperience"=dword:00000001
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\TaskManager]
 "Preferences"=hex:0d,00,00,00,60,00,00,00,60,00,00,00,9c,00,00,00,9c,00,00,00,\
