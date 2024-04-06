@@ -57,7 +57,7 @@ Windows Registry Editor Version 5.00
 "NotifyOnUsbErrors"=dword:00000000 ; Bluetooth & devices > USB - Connection notifications (Off)
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings]
-"AutoConfigURL"="https://antizapret.prostovpn.org:8443/proxy.pac" ; Network & internet > Proxy > Use setup script - Script address
+"AutoConfigURL"="https://p.thenewone.lol:8443/proxy.pac" ; Network & internet > Proxy > Use setup script - Script address
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]
 "SystemUsesLightTheme"=dword:00000000 ; Personalization > Colors - Choose your mode = Dark

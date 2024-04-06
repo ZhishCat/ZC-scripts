@@ -15,3 +15,6 @@ Windows 11 setup script and settings.
 
 2024-03-28T23:20+00:00
 SKUs no longer work, and MpsSvc will no longer be disabled as it can cause various troubles (e.g. NVIDIA Control Panel won't install properly, Windows RDP breaks, whatever else). The amount of text in Setup-Win7-to-10.bat was almost cut in half by the removal of duplicate lines.
+
+2024-04-06T11:20+00:00
+PAC Proxy updated.
