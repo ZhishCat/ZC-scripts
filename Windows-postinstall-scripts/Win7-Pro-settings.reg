@@ -39,27 +39,6 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]
 "AutoConfigURL"="https://p.thenewone.lol:8443/proxy.pac"
 
-;-Mouse-;
-[HKEY_CURRENT_USER\Control Panel\Mouse]
-"MouseSensitivity"="10"
-"SmoothMouseXCurve"=hex:\
-	00,00,00,00,00,00,00,00,\
-	70,3D,0A,00,00,00,00,00,\
-	E0,7A,14,00,00,00,00,00,\
-	50,B8,1E,00,00,00,00,00,\
-	C0,F5,28,00,00,00,00,00
-"SmoothMouseYCurve"=hex:\
-	00,00,00,00,00,00,00,00,\
-	00,00,38,00,00,00,00,00,\
-	00,00,70,00,00,00,00,00,\
-	00,00,A8,00,00,00,00,00,\
-	00,00,E0,00,00,00,00,00
-
-[HKEY_USERS\.DEFAULT\Control Panel\Mouse]
-"MouseSpeed"="0"
-"MouseThreshold1"="0"
-"MouseThreshold2"="0"
-
 ;-Notification Area Icons-;
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
 "EnableAutoTray"=dword:00000000

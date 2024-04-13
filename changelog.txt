@@ -18,3 +18,6 @@ SKUs no longer work, and MpsSvc will no longer be disabled as it can cause vario
 
 2024-04-06T11:20+00:00
 PAC Proxy updated.
+
+2024-04-13T22:28+00:00
+Removed the "MarkC Windows 10 + 8.1 + 8 + 7 Mouse Acceleration Fix" strings and the dark theme settings. Less is more.

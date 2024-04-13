@@ -43,5 +43,4 @@ exit
 
 :Win10LTSC2021
 reg import Win10-LTSC-2021-settings.reg
-pause
 exit
