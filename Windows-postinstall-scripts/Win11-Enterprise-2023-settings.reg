@@ -60,9 +60,7 @@ Windows Registry Editor Version 5.00
 "AutoConfigURL"="https://p.thenewone.lol:8443/proxy.pac" ; Network & internet > Proxy > Use setup script - Script address
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]
-"SystemUsesLightTheme"=dword:00000000 ; Personalization > Colors - Choose your mode = Dark
 "EnableTransparency"=dword:00000000 ; Personalization > Colors - Transparency effects (Off)
-"AppsUseLightTheme"=dword:00000000 ; Personalization > Colors - Choose your mode = Dark
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
 "{645FF040-5081-101B-9F08-00AA002F954E}"=dword:00000001 ; Personalization > Themes > Desktop Icon Settings - Recycle Bin (Off)
