@@ -117,9 +117,6 @@ Windows Registry Editor Version 5.00
 "HttpAcceptLanguageOptOut"=dword:00000001
 
 ;ADDITIONAL SETTINGS;
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DiagTrack]
-"Start"=dword:00000004
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat]
 "DisablePCA"=dword:00000001
 
