@@ -97,12 +97,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\Maps]
 "AutoUpdateEnabled"=dword:00000000 ; Apps > Offline maps > Map updates - Update automatically when plugged in and on Wi-Fi (Off)
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run] ; Apps > Startup - Windows Security notification icon removal
-"SecurityHealth"=-
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run] ; Apps > Startup - Windows Security notification icon removal
-"SecurityHealth"=-
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
 "DisableAutomaticRestartSignOn"=dword:00000001 ; Accounts > Sign-in options - Use my sign-in info to automatically finish setting up after an update (Off, GPO)
 "VerboseStatus"=dword:00000001 ; Verbose Logon Messages (On, GPO)
@@ -276,12 +270,6 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MRT]
 "DontOfferThroughWUAU"=dword:00000001 ; Disable Malicious Software Removal Tool From Installing (On, GPO)
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DiagTrack]
-"Start"=dword:00000004 ; Services > Connected User Experiences and Telemetry (Disabled) The Connected User Experiences and Telemetry service enables features that support in-application and connected user experiences. Additionally, this service manages the event driven collection and transmission of diagnostic and usage information (used to improve the experience and quality of the Windows Platform) when the diagnostics and usage privacy option settings are enabled under Feedback and Diagnostics.
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dmwappushservice]
-"Start"=dword:00000004 ; Services > Device Management Wireless Application Protocol (WAP) Push message Routing Service (Disabled) Routes Wireless Application Protocol (WAP) Push messages received by the device and synchronizes Device Management sessions
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat]
 "DisablePCA"=dword:00000001 ; Turn off Program Compatibility Assistant (On, GPO)

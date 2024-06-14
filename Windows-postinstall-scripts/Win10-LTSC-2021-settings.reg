@@ -1,9 +1,223 @@
 Windows Registry Editor Version 5.00
+;GPO - Computer Configuration;
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
+"ShowRecommendationsEnabled"=dword:00000000;Allow feature recommendations and browser assistance notifications from Microsoft Edge,Disabled,\Microsoft Edge
+"ShowPDFDefaultRecommendationsEnabled"=dword:00000000;Allow notifications to set Microsoft Edge as default PDF reader,Disabled,\Microsoft Edge\Content settings
+"PersonalizationReportingEnabled"=dword:00000000;Allow personalization of ads, Microsoft Edge, search, news and other Microsoft services by sending browsing history, favorites and collections, usage and other browsing data to Microsoft,Disabled,\Microsoft Edge
+"MSAWebSiteSSOUsingThisProfileAllowed"=dword:00000000;Allow single sign-on for Microsoft personal sites using this profile,Disabled,\Microsoft Edge
+"UserFeedbackAllowed"=dword:00000000;Allow user feedback,Disabled,\Microsoft Edge
+"FamilySafetySettingsEnabled"=dword:00000000;Allow users to configure Family safety and Kids Mode,Disabled,\Microsoft Edge
+"PaymentMethodQueryEnabled"=dword:00000000;Allow websites to query for available payment methods,Disabled,\Microsoft Edge
+"BlockThirdPartyCookies"=dword:00000000;Block third party cookies,Disabled,\Microsoft Edge
+"TrackingPrevention"=dword:00000000;Block tracking of users' web-browsing activity,Enabled,\Microsoft Edge
+"BrowserSignin"=dword:00000000;Browser sign-in settings,Enabled,\Microsoft Edge
+"SpotlightExperiencesAndRecommendationsEnabled"=dword:00000000;Choose whether users can receive customized background images and text, suggestions, notifications, and tips for Microsoft services,Disabled,\Microsoft Edge\Content settings
+"TyposquattingCheckerEnabled"=dword:00000000;Configure Edge Website Typo Protection,Disabled,\Microsoft Edge\Edge Website Typo Protection settings
+"InternetExplorerIntegrationLevel"=dword:00000000;Configure Internet Explorer integration,Enabled,\Microsoft Edge
+"SleepingTabsEnabled"=dword:00000000;Configure sleeping tabs,Disabled,\Microsoft Edge\Sleeping tabs settings
+"BackgroundModeEnabled"=dword:00000000;Continue running background apps after Microsoft Edge closes,Disabled,\Microsoft Edge
+"DnsOverHttpsMode"="off";Control the mode of DNS-over-HTTPS,Enabled,\Microsoft Edge
+"Edge3PSerpTelemetryEnabled"=dword:00000000;Edge 3P SERP Telemetry Enabled,Disabled,\Microsoft Edge
+"EdgeWalletEtreeEnabled"=dword:00000000;Edge Wallet E-Tree Enabled,Disabled,\Microsoft Edge
+"EfficiencyModeEnabled"=dword:00000000;Efficiency mode enabled,Disabled,\Microsoft Edge\Performance
+"CryptoWalletEnabled"=dword:00000000;Enable CryptoWallet feature,Disabled,\Microsoft Edge
+"EdgeFollowEnabled"=dword:00000000;Enable Follow service in Microsoft Edge,Disabled,\Microsoft Edge
+"PromotionalTabsEnabled"=dword:00000000;Enable full-tab promotional content,Disabled,\Microsoft Edge
+"GamerModeEnabled"=dword:00000000;Enable Gamer Mode,Disabled,\Microsoft Edge\Games settings
+"AddressBarMicrosoftSearchInBingProviderEnabled"=dword:00000000;Enable Microsoft Search in Bing suggestions in the address bar,Disabled,\Microsoft Edge
+"NetworkPredictionOptions"=dword:00000002;Enable network prediction,Enabled,\Microsoft Edge
+"NewTabPagePrerenderEnabled"=dword:00000000;Enable preload of the new tab page for faster rendering,Disabled,\Microsoft Edge\Startup, home page and new tab page
+"SearchSuggestEnabled"=dword:00000000;Enable search suggestions,Disabled,\Microsoft Edge
+"StartupBoostEnabled"=dword:00000000;Enable startup boost,Disabled,\Microsoft Edge\Performance
+"TabServicesEnabled"=dword:00000000;Enable tab organization suggestions,Disabled,\Microsoft Edge
+"LocalBrowserDataShareEnabled"=dword:00000000;Enable Windows to search local Microsoft Edge browsing data,Disabled,\Microsoft Edge
+"AIGenThemesEnabled"=dword:00000000;Enables DALL-E themes generation,Disabled,\Microsoft Edge
+"DefaultBrowserSettingsCampaignEnabled"=dword:00000000;Enables default browser settings campaigns,Disabled,\Microsoft Edge
+"ForceBingSafeSearch"=dword:00000000;Enforce Bing SafeSearch,Enabled,\Microsoft Edge
+"ForceGoogleSafeSearch"=dword:00000000;Enforce Google SafeSearch,Disabled,\Microsoft Edge
+"HideFirstRunExperience"=dword:00000001;Hide the First-run experience and splash screen,Enabled,\Microsoft Edge
+"InAppSupportEnabled"=dword:00000000;In-app support Enabled,Disabled,\Microsoft Edge
+"MicrosoftEdgeInsiderPromotionEnabled"=dword:00000000;Microsoft Edge Insider Promotion Enabled,Disabled,\Microsoft Edge
+"PerformanceDetectorEnabled"=dword:00000000;Performance Detector Enabled,Disabled,\Microsoft Edge\Performance
+"PinBrowserEssentialsToolbarButton"=dword:00000000;Pin browser essentials toolbar button,Disabled,\Microsoft Edge\Performance
+"DiagnosticData"=dword:00000000;Send required and optional diagnostic data about browser usage,Enabled,\Microsoft Edge
+"DefaultShareAdditionalOSRegionSetting"=dword:00000002;Set the default "share additional operating system region" setting,Enabled,\Microsoft Edge
+"EdgeShoppingAssistantEnabled"=dword:00000000;Shopping in Microsoft Edge Enabled,Disabled,\Microsoft Edge
+"ShowMicrosoftRewards"=dword:00000000;Show Microsoft Rewards experiences,Disabled,\Microsoft Edge
+"ShowHistoryThumbnails"=dword:00000000;Show thumbnail images for browsing history,Disabled,\Microsoft Edge
+"ShowAcrobatSubscriptionButton"=dword:00000000;Shows button on native PDF viewer in Microsoft Edge that allows users to sign up for Adobe Acrobat subscription,Disabled,\Microsoft Edge
+"AlternateErrorPagesEnabled"=dword:00000000;Suggest similar pages when a webpage can't be found,Disabled,\Microsoft Edge
+"TextPredictionEnabled"=dword:00000000;Text prediction enabled by default,Disabled,\Microsoft Edge
+"VisualSearchEnabled"=dword:00000000;Visual search enabled,Disabled,\Microsoft Edge
+"WalletDonationEnabled"=dword:00000000;Wallet Donation Enabled,Disabled,\Microsoft Edge
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"AllowOnlineTips"=dword:00000000;Allow Online Tips,Disabled,\Administrative Templates\Control Panel
+"ForceClassicControlPanel"=dword:00000001;Always open All Control Panel Items when opening Control Panel,Disabled,\Administrative Templates\Control Panel
+"NoStartMenuMFUprogramslist"=dword:00000001;Remove frequent programs list from the Start Menu,Enabled,\Administrative Templates\Start Menu and Taskbar
+"NoRecentDocsHistory"=dword:00000001;Do not keep history of recently opened documents,Enabled,\Administrative Templates\Start Menu and Taskbar
+"NoDriveTypeAutoRun"=dword:000000ff;Turn off Autoplay,Enabled,\Administrative Templates\Windows Components\AutoPlay Policies
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\InputPersonalization]
+"AllowInputPersonalization"=dword:00000000;Allow users to enable online speech recognition services,Disabled,\Administrative Templates\Control Panel\Regional and Language Options
+"RestrictImplicitInkCollection"=dword:00000001;Turn off automatic learning,Enabled,\Administrative Templates\Control Panel\Regional and Language Options\Handwriting personalization
+"RestrictImplicitTextCollection"=dword:00000001;Turn off automatic learning,Enabled,\Administrative Templates\Control Panel\Regional and Language Options\Handwriting personalization
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Control Panel\International]
+"BlockCleanupOfUnusedPreinstalledLangPacks"=dword:00000001;Block clean-up of unused language packs,Enabled,\Administrative Templates\Control Panel\Regional and Language Options
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile]
+"EnableFirewall"=dword:00000000;Windows Defender Firewall: Protect all network connections,Disabled,\Administrative Templates\Network\Network Connections\Windows Defender Firewall\Domain Profile
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\StandardProfile]
+"EnableFirewall"=dword:00000000;Windows Defender Firewall: Protect all network connections,Disabled,\Administrative Templates\Network\Network Connections\Windows Defender Firewall\Standard Profile
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"DisableSearchBoxSuggestions"=dword:00000001;Don't search the web or display web results in Search,Enabled,\Administrative Templates\Windows Components\Search
+"HideRecentlyAddedApps"=dword:00000001;Remove "Recently added" list from Start Menu,Enabled,\Administrative Templates\Start Menu and Taskbar
+"NoNewAppAlert"=dword:00000001;Do not show the 'new application installed' notification,Enabled,\Administrative Templates\Windows Components\File Explorer
+"NoUseStoreOpenWith"=dword:00000001;Turn off access to the Store,Enabled,\Administrative Templates\System\Internet Communication Management\Internet Communication settings
+"ShowOrHideMostUsedApps"=dword:00000002;Show or hide "Most used" list from Start menu,Enabled,\Administrative Templates\Start Menu and Taskbar
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"DisableAutomaticRestartSignOn"=dword:00000001;Sign-in and lock last interactive user automatically after a restart,Disabled,\Administrative Templates\Windows Components\Windows Logon Options
+"EnableLUA"=dword:00000001;EnableLUA specifies whether Windows User Account Controls (UAC) notifies the user when programs try to make changes to the computer. UAC was formerly known as Limited User Account (LUA). https://learn.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-lua-settings-enablelua
+"ConsentPromptBehaviorAdmin"=dword:00000000;User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode,Elevate without prompting,\Windows Settings\Security Settings\Local Policies\Security Options
+"PromptOnSecureDesktop"=dword:00000000;User Account Control: Switch to the secure desktop when prompting for elevation,Disabled,\Windows Settings\Security Settings\Local Policies\Security Options
+"VerboseStatus"=dword:00000001;Display highly detailed status messages,Enabled,\Administrative Templates\System
+"NoConnectedUser"=dword:00000003;Accounts: Block Microsoft accounts,\Windows Settings\Security Settings\Local Policies\Security Options
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\AppV\CEIP]
+"CEIPEnable"=dword:00000000;Microsoft Customer Experience Improvement Program (CEIP),Disabled,\Administrative Templates\System\App-V\CEIP
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\deviceInstall\Settings]
+"DisableSystemRestore"=dword:00000001;Prevent creation of a system restore point during device activity that would normally prompt creation of a restore point,Enabled,\Administrative Templates\System\Device Installation
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\HandwritingErrorReports]
+"PreventHandwritingErrorReports"=dword:00000001;Turn off handwriting recognition error reporting,Enabled,\Administrative Templates\System\Internet Communication Management\Internet Communication settings
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SQMClient\Windows]
+"CEIPEnable"=dword:00000000;Turn off Windows Customer Experience Improvement Program,Enabled,\Administrative Templates\System\Internet Communication Management\Internet Communication settings
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PCHealth\HelpSvc]
+"Headlines"=dword:00000000;Turn off Help and Support Center "Did you know?" content,Enabled,\Administrative Templates\System\Internet Communication Management\Internet Communication settings
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PCHealth\ErrorReporting]
+"DoReport"=dword:00000000;Turn off Windows Error Reporting,Enabled,\Administrative Templates\System\Internet Communication Management\Internet Communication settings
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001;Turn off Windows Error Reporting,Enabled,\Administrative Templates\System\Internet Communication Management\Internet Communication settings
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Messenger\Client]
+"CEIP"=dword:00000002;Turn off the Windows Messenger Customer Experience Improvement Program,Enabled,\Administrative Templates\System\Internet Communication Management\Internet Communication settings
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\TabletPC]
+"PreventHandwritingDataSharing"=dword:00000001;Turn off handwriting personalization data sharing,Enabled,\Administrative Templates\System\Internet Communication Management\Internet Communication settings
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"EnableActivityFeed"=dword:00000000;Enables Activity Feed (aka Timeline),Disabled,\Administrative Templates\System\OS Policies
+"EnableSmartScreen"=dword:00000000;Configure Windows Defender SmartScreen,Disabled,\Administrative Templates\Windows Components\File Explorer
+"PublishUserActivities"=dword:00000000;Allow publishing of User Activities,Disabled,\Administrative Templates\System\OS Policies
+"UploadUserActivities"=dword:00000000;Allow upload of User Activities,Disabled,\Administrative Templates\System\OS Policies
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore]
+"DisableSR"=dword:00000001;Turn off System Restore,Enabled,\Administrative Templates\System\System Restore
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Troubleshooting\AllowRecommendations]
+"TroubleshootingAllowRecommendations"=dword:00000000;Troubleshooting: Allow users to access recommended troubleshooting for known problems,Disabled,\Administrative Templates\System\Troubleshooting and Diagnostics\Microsoft Support Diagnostic Tool
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WDI\{9c5a40da-b965-4fc3-8781-88dd50a6299d}]
+"ScenarioExecutionEnabled"=dword:00000000;Enable/Disable PerfTrack,Disabled,\Administrative Templates\System\Troubleshooting and Diagnostics\Windows Performance PerfTrack
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AdvertisingInfo]
+"DisabledByGroupPolicy"=dword:00000001;Turn off the advertising ID,Enabled,\Administrative Templates\System\User Profiles
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsRunInBackground"=dword:00000002;Let Windows apps run in the background,Enabled,\Administrative Templates\Windows Components\App Privacy
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat]
+"AITEnable"=dword:00000000;Turn off Application Telemetry,Enabled,\Administrative Templates\Windows Components\Application Compatibility
+"DisableInventory"=dword:00000001;Turn off Inventory Collector,Enabled,\Administrative Templates\Windows Components\Application Compatibility
+"DisablePCA"=dword:00000001;Turn off Program Compatibility Assistant,Enabled,\Administrative Templates\Windows Components\Application Compatibility
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Biometrics]
+"Enabled"=dword:00000000;Allow the use of biometrics,Disabled,\Administrative Templates\Windows Components\Biometrics
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
+"DisableSoftLanding"=dword:00000001;Do not show Windows tips,Enabled,\Administrative Templates\Windows Components\Cloud Content
+"DisableWindowsConsumerFeatures"=dword:00000001;Turn off Microsoft consumer experiences,Enabled,\Administrative Templates\Windows Components\Cloud Content
+"DisableCloudOptimizedContent"=dword:00000001;Turn off cloud optimized content,Enabled,\Administrative Templates\Windows Components\Cloud Content
+"DisableConsumerAccountStateContent"=dword:00000001;Turn off cloud consumer account state content,Enabled,\Administrative Templates\Windows Components\Cloud Content
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"AllowDeviceNameInTelemetry"=dword:00000000;Allow device name to be sent in Windows diagnostic data,Disabled,\Administrative Templates\Windows Components\Data Collection and Preview Builds
+"AllowTelemetry"=dword:00000000;Allow Telemetry,Enabled,\Administrative Templates\Windows Components\Data Collection and Preview Builds
+"DoNotShowFeedbackNotifications"=dword:00000001;Do not show feedback notifications,Enabled,\Administrative Templates\Windows Components\Data Collection and Preview Builds
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DWM]
+"DisallowAnimations"=dword:00000001;Do not allow window animations,Enabled,\Administrative Templates\Windows Components\Desktop Window Manager
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\EdgeUI]
+"DisableHelpSticker"=dword:00000001;Disable help tips,Enabled,\Administrative Templates\Windows Components\Edge UI
+"DisableMFUTracking"=dword:00000001;Turn off tracking of app usage,Enabled,\Administrative Templates\Windows Components\Edge UI
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\FindMyDevice]
+"AllowFindMyDevice"=dword:00000000;Turn On/Off Find My Device,Disabled,\Administrative Templates\Windows Components\Find My Device
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3]
+"1806"=dword:00000000;Show security warning for potentially unsafe files,Enabled,\Administrative Templates\Windows Components\Internet Explorer\Internet Explorer Control Panel\Security Page\Internet Zone
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender]
+"DisableAntiSpyware"=dword:00000001;Turn off Microsoft Defender Antivirus,Enabled,\Administrative Templates\Windows Components\Microsoft Defender Antivirus
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Feeds]
+"EnableFeeds"=dword:00000000;Enable news and interests on the taskbar,Disabled,\Administrative Templates\Windows Components\News and interests
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCortana"=dword:00000000;Allow Cortana,Disabled,\Administrative Templates\Windows Components\Search
+"AllowCloudSearch"=dword:00000000;Allow Cloud Search,Enabled,\Administrative Templates\Windows Components\Search
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\TextInput]
+"AllowLinguisticDataCollection"=dword:00000000;Improve inking and typing recognition,Disabled,\Administrative Templates\Windows Components\Text Input
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SmartScreen]
+"ConfigureAppInstallControlEnabled"=dword:00000001;Configure App Install Control,Enabled,\Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer
+"ConfigureAppInstallControl"="Anywhere";Configure App Install Control,Enabled,\Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\GameDVR]
+"AllowGameDVR"=dword:00000000;Enables or disables Windows Game Recording and Broadcasting,Disabled,\Administrative Templates\Windows Components\Windows Game Recording and Broadcasting
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Installer]
+"LimitSystemRestoreCheckpointing"=dword:00000001;Turn off creation of System Restore checkpoints,Enabled,\Administrative Templates\Windows Components\Windows Installer
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]
+"DisableNotifications"=dword:00000001;Hide all notifications,Enabled,\Administrative Templates\Windows Components\Windows Security\Notifications
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Systray]
+"HideSystray"=dword:00000001;Hide Windows Security Systray,Enabled,\Administrative Templates\Windows Components\Windows Security\Systray
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAutoUpdate"=dword:00000001;Configure Automatic Updates,Disabled,\Administrative Templates\Windows Components\Windows Update
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"ExcludeWUDriversInQualityUpdate"=dword:00000001;Do not include drivers with Windows Updates,Enabled,\Administrative Templates\Windows Components\Windows Update
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MRT]
+"DontOfferThroughWUAU"=dword:00000001;Do not offer Microsoft Malicious Software Removal Tool through Automatic Updates for Windows Update
+
+;GPO - User Configuration;
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
+"DisableWindowsSpotlightWindowsWelcomeExperience"=dword:00000001;Turn off the Windows Welcome Experience,Enabled,\Windows Components\Cloud Content
+"DisableTailoredExperiencesWithDiagnosticData"=dword:00000001;Do not use diagnostic data for tailored experiences,\Windows Components\Cloud Content
+
 ;SETTINGS;
 ;-System-;
 ;Notifications & actions
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\PushNotifications]
 "ToastEnabled"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\UserProfileEngagement]
+"ScoobeSystemSettingEnabled"=dword:00000000
 
 ;Tablet
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ImmersiveShell]
@@ -33,11 +247,6 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CDP]
 "RomeSdkChannelUserAuthzPolicy"=dword:00000000
 
-;About
-;System protection
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore]
-"DisableSR"=dword:00000001
-
 ;-Devices-;
 ;Printers & scanners
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows]
@@ -53,10 +262,6 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Input\Settings]
 "InsightsEnabled"=dword:00000000
-
-;AutoPlay
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ShellHWDetection]
-"Start"=dword:00000004
 
 ;USB
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Shell\USB]
@@ -77,37 +282,6 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
 "{645FF040-5081-101B-9F08-00AA002F954E}"=dword:00000001
 
-;Start
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
-"HideRecentlyAddedApps"=dword:00000001
-"DisableSearchBoxSuggestions"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
-"NoRecentDocsHistory"=dword:00000001
-"AllowOnlineTips"=dword:00000000
-"ForceClassicControlPanel"=dword:00000001
-
-;-Apps-;
-;Offline maps
-[HKEY_LOCAL_MACHINE\SYSTEM\Maps]
-"AutoUpdateEnabled"=dword:00000000
-
-;Startup
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
-"SecurityHealth"=-
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run]
-"SecurityHealth"=-
-
-;-Accounts-;
-;Sign-in options
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
-"DisableAutomaticRestartSignOn"=dword:00000001
-"VerboseStatus"=dword:00000001
-"ConsentPromptBehaviorAdmin"=dword:00000000
-"PromptOnSecureDesktop"=dword:00000000
-"EnableLUA"=dword:00000001
-
 ;-Time & Language-;
 ;Date & time
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]
@@ -126,17 +300,10 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR]
 "AppCaptureEnabled"=dword:00000000
 
-[HKEY_CURRENT_USER\System\GameConfigStore]
-"GameDVR_Enabled"=dword:00000000
-
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\GameBar]
 "AllowAutoGameMode"=dword:00000000
 "AutoGameModeEnabled"=dword:00000000
 "UseNexusForGameBarEnabled"=dword:00000000
-
-;Captures
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\GameDVR]
-"AllowgameDVR"=dword:00000000
 
 ;-Search-;
 ;Permissions & History
@@ -144,48 +311,17 @@ Windows Registry Editor Version 5.00
 "SafeSearchMode"=dword:00000000
 "IsDeviceSearchHistoryEnabled"=dword:00000000
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
-"AllowCloudSearch"=dword:00000000
-
 ;-Privacy-;
 ;General
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AdvertisingInfo]
-"DisabledByGroupPolicy"=dword:00000001
-
 [HKEY_CURRENT_USER\Control Panel\International\User Profile]
 "HttpAcceptLanguageOptOut"=dword:00000001
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\EdgeUI]
-"DisableMFUTracking"=dword:00000001
-
-;Speech
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\InputPersonalization]
-"AllowInputPersonalization"=dword:00000000
-
 ;Inking & typing personalization
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\InputPersonalization]
-"RestrictImplicitInkCollection"=dword:00000001
-"RestrictImplicitTextCollection"=dword:00000001
-
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\InputPersonalization\TrainedDataStore]
 "HarvestContacts"=dword:00000000
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Personalization\Settings]
 "AcceptedPrivacyPolicy"=dword:00000000
-
-;Diagnostics & feedback
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
-"AllowTelemetry"=dword:00000000
-"DoNotShowFeedbackNotifications"=dword:00000001
-
-[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
-"DisableWindowsSpotlightWindowsWelcomeExperience"=dword:00000001
-"DisableTailoredExperiencesWithDiagnosticData"=dword:00000001
-
-;Activity history
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
-"PublishUserActivities"=dword:00000000
-"EnableSmartScreen"=dword:00000000
 
 ;Location
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location]
@@ -239,10 +375,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\bluetoothSync]
 "Value"="Deny"
 
-;Background apps
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
-"LetAppsRunInBackground"=dword:00000002
-
 ;App diagnostics
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\appDiagnostics]
 "Value"="Deny"
@@ -263,36 +395,12 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\broadFileSystemAccess]
 "Value"="Deny"
 
-;-Update & Security-;
-;Windows Update
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
-"NoAutoUpdate"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MRT]
-"DontOfferThroughWUAU"=dword:00000001
-
 ;Delivery Optimization
 [HKEY_USERS\S-1-5-20\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Settings]
 "DownloadMode"=dword:00000000
 
-;Windows Security
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender]
-"DisableAntiSpyware"=dword:00000001
-
-;ADDITIONAL SETTINGS;
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat]
-"DisablePCA"=dword:00000001
-
-;Programs and Features uninstall confirmation prompt box
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\DontShowMeThisDialogAgain]
-"{948e51fb-0a48-44f0-86ac-33c36def540c}"="NO"
-
-;Microsoft Edge policies
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
-"BrowserSignin"=dword:00000000
-"PersonalizationReportingEnabled"=dword:00000000
-"ShowRecommendationsEnabled"=dword:00000000
-"HideFirstRunExperience"=dword:00000001
+"{948e51fb-0a48-44f0-86ac-33c36def540c}"="NO";Programs and Features uninstall confirmation prompt box
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\TaskManager]
 "Preferences"=hex:0d,00,00,00,60,00,00,00,60,00,00,00,9c,00,00,00,9c,00,00,00,\
