@@ -234,6 +234,7 @@ Windows Registry Editor Version 5.00
 "SnapAssist"=dword:00000000
 "JointResize"=dword:00000000
 "MultiTaskingAltTabFilter"=dword:00000003
+"Start_AccountNotifications"=dword:00000000
 "TaskbarGlomLevel"=dword:00000002
 "Hidden"=dword:00000001
 "HideFileExt"=dword:00000000
