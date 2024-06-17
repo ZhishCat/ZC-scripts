@@ -144,10 +144,10 @@ Windows Registry Editor Version 5.00
 "Enabled"=dword:00000000;Allow the use of biometrics,Disabled,\Administrative Templates\Windows Components\Biometrics
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
-"DisableSoftLanding"=dword:00000001;Do not show Windows tips,Enabled,\Administrative Templates\Windows Components\Cloud Content
-"DisableWindowsConsumerFeatures"=dword:00000001;Turn off Microsoft consumer experiences,Enabled,\Administrative Templates\Windows Components\Cloud Content
 "DisableCloudOptimizedContent"=dword:00000001;Turn off cloud optimized content,Enabled,\Administrative Templates\Windows Components\Cloud Content
 "DisableConsumerAccountStateContent"=dword:00000001;Turn off cloud consumer account state content,Enabled,\Administrative Templates\Windows Components\Cloud Content
+"DisableSoftLanding"=dword:00000001;Do not show Windows tips,Enabled,\Administrative Templates\Windows Components\Cloud Content
+"DisableWindowsConsumerFeatures"=dword:00000001;Turn off Microsoft consumer experiences,Enabled,\Administrative Templates\Windows Components\Cloud Content
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
 "AllowDeviceNameInTelemetry"=dword:00000000;Allow device name to be sent in Windows diagnostic data,Disabled,\Administrative Templates\Windows Components\Data Collection and Preview Builds
