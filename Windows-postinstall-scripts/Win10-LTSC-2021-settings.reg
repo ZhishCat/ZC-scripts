@@ -206,199 +206,151 @@ Windows Registry Editor Version 5.00
 "DontOfferThroughWUAU"=dword:00000001;Do not offer Microsoft Malicious Software Removal Tool through Automatic Updates for Windows Update
 
 ;GPO - User Configuration;
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"HidePeopleBar"=dword:00000001;Remove the People Bar from the taskbar,Enabled,\Start Menu and Taskbar
+"NoBalloonFeatureAdvertisements"=dword:00000001;Turn off feature advertisement balloon notifications,Enabled,\Start Menu and Taskbar
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Assistance\Client\1.0]
+"NoExplicitFeedback"=dword:00000001;Turn off Help Ratings,Enabled,\System\Internet Communication Management\Internet Communication settings
+"NoImplicitFeedback"=dword:00000001;Turn off Help Experience Improvement Program,Enabled,\System\Internet Communication Management\Internet Communication settings
+
 [HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
-"DisableWindowsSpotlightWindowsWelcomeExperience"=dword:00000001;Turn off the Windows Welcome Experience,Enabled,\Windows Components\Cloud Content
+"DisableWindowsSpotlightFeatures"=dword:00000001;Turn off all Windows spotlight features,Enabled,\Windows Components\Cloud Content
 "DisableTailoredExperiencesWithDiagnosticData"=dword:00000001;Do not use diagnostic data for tailored experiences,\Windows Components\Cloud Content
+"DisableWindowsSpotlightWindowsWelcomeExperience"=dword:00000001;Turn off the Windows Welcome Experience,Enabled,\Windows Components\Cloud Content
 
 ;SETTINGS;
-;-System-;
-;Notifications & actions
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\PushNotifications]
-"ToastEnabled"=dword:00000000
+"ToastEnabled"=dword:00000000;System > Notifications & actions > Get notifications from apps and other senders
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\UserProfileEngagement]
-"ScoobeSystemSettingEnabled"=dword:00000000
+"ScoobeSystemSettingEnabled"=dword:00000000;System > Notifications & actions > Suggest ways I can finish setting up my device to get the most out of Windows
 
-;Tablet
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ImmersiveShell]
-"SignInMode"=dword:00000001
-"ConvertibleSlateModePromptPreference"=dword:00000000
-
-;Multitasking
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
-"ShowFrequent"=dword:00000000
-"EnableAutoTray"=dword:00000000
+"ShowFrequent"=dword:00000000;File Explorer Options > General > Show frequently used folders in Quick access
+"EnableAutoTray"=dword:00000000;Personalization > Taskbar > Select which icons appear on the taskbar > Always show all icons in the notification area
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"SnapFill"=dword:00000000
-"SnapAssist"=dword:00000000
-"JointResize"=dword:00000000
-"MultiTaskingAltTabFilter"=dword:00000003
-"Start_AccountNotifications"=dword:00000000
-"TaskbarGlomLevel"=dword:00000002
-"Hidden"=dword:00000001
-"HideFileExt"=dword:00000000
-"LaunchTo"=dword:00000001
-"ShowTaskViewButton"=dword:00000000
+"MultiTaskingAltTabFilter"=dword:00000003;System > Multitasking > Pressing Alt+Tab shows windows that are open on (Open windows only)
+"Start_AccountNotifications"=dword:00000000;Personalization > Start > Show account-related notifications. When off, required notifications are still shown.
+"TaskbarGlomLevel"=dword:00000002;Personalization > Taskbar > Combine taskbar buttons (Never)
+"Hidden"=dword:00000001;File Explorer Options > View > Show hidden files, folders, and drives
+"HideFileExt"=dword:00000000;File Explorer Options > View > Hide extensions for known file types
+"LaunchTo"=dword:00000001;File Explorer Options > General > Open File Explorer to: This PC
+"ShowTaskViewButton"=dword:00000000;Taskbar context menu > Show task view button
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search]
-"SearchboxTaskbarMode"=dword:00000000
+"SearchboxTaskbarMode"=dword:00000000;Taskbar context menu > Search > Hidden
 
-;Shared experiences
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CDP]
-"RomeSdkChannelUserAuthzPolicy"=dword:00000000
+"RomeSdkChannelUserAuthzPolicy"=dword:00000000;System > Shared experiences > Let apps on other devices (including linked phones and tablets) open and message apps on this device, and vice versa
 
-;-Devices-;
-;Printers & scanners
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows]
-"LegacyDefaultPrinterMode"=dword:00000001
-
-;Typing
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\TabletTip\1.7]
-"EnableAutocorrection"=dword:00000000
-"EnableSpellchecking"=dword:00000000
-"EnableTextPrediction"=dword:00000000
-"EnablePredictionSpaceInsertion"=dword:00000000
-"EnableDoubleTapSpace"=dword:00000000
+"LegacyDefaultPrinterMode"=dword:00000001;Devices > Printers & scanners > Let Windows manage my default printer
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Input\Settings]
-"InsightsEnabled"=dword:00000000
+"InsightsEnabled"=dword:00000000;Devices > Typing > Typing insights
 
-;USB
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Shell\USB]
-"NotifyOnUsbErrors"=dword:00000000
-"NotifyOnWeakCharger"=dword:00000000
+"NotifyOnUsbErrors"=dword:00000000;Devices > USB > Notify me if there are issues connecting to USB devices
+"NotifyOnWeakCharger"=dword:00000000;Devices > USB > Notify me if my PC is charging slowly over USB
 
-;-Network & Internet-;
-;Proxy
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]
-"AutoConfigURL"="https://p.thenewone.lol:8443/proxy.pac"
+"AutoConfigURL"="https://p.thenewone.lol:8443/proxy.pac";Network & Internet > Proxy > Script address
 
-;-Personalization-;
-;Colors
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize]
-"EnableTransparency"=dword:00000000
+"EnableTransparency"=dword:00000000;Personalization > Colors > Transparency effects
 
-;Themes - Desktop icon settings
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
-"{645FF040-5081-101B-9F08-00AA002F954E}"=dword:00000001
+"{645FF040-5081-101B-9F08-00AA002F954E}"=dword:00000001;Personalization > Themes > Desktop icon settings > Recycle Bin
 
-;-Time & Language-;
-;Date & time
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]
-"TimeZoneKeyName"="Saratov Standard Time"
+"TimeZoneKeyName"="Saratov Standard Time";Time & Language > Date & time > Time zone
 
-;Region
 [HKEY_CURRENT_USER\Control Panel\International]
-"iFirstDayOfWeek"="0"
-"sShortDate"="yyyy-MM-dd"
-"sLongDate"="MMMM d, yyyy"
-"sShortTime"="HH:mm"
-"sTimeFormat"="HH:mm:ss"
+"iFirstDayOfWeek"="0";Time & Language > Region > Change data formats > First day of week
+"sShortDate"="yyyy-MM-dd";Time & Language > Region > Change data formats > Short date
+"sLongDate"="MMMM d, yyyy";Time & Language > Region > Change data formats > Long date
+"sShortTime"="HH:mm";Time & Language > Region > Change data formats > Short time
+"sTimeFormat"="HH:mm:ss";Time & Language > Region > Change data formats > Long time
 
-;-Gaming-;
-;Xbox Game Bar
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR]
 "AppCaptureEnabled"=dword:00000000
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\GameBar]
 "AllowAutoGameMode"=dword:00000000
-"AutoGameModeEnabled"=dword:00000000
-"UseNexusForGameBarEnabled"=dword:00000000
+"UseNexusForGameBarEnabled"=dword:00000000;Gaming > Game Bar > Allow your controller to open Game Bar
+"AutoGameModeEnabled"=dword:00000000;Gaming > Game Mode
 
-;-Search-;
-;Permissions & History
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\SearchSettings]
-"SafeSearchMode"=dword:00000000
-"IsDeviceSearchHistoryEnabled"=dword:00000000
+"SafeSearchMode"=dword:00000000;Search > SafeSearch
+"IsDeviceSearchHistoryEnabled"=dword:00000000;Search > Search history on this device
 
-;-Privacy-;
-;General
 [HKEY_CURRENT_USER\Control Panel\International\User Profile]
-"HttpAcceptLanguageOptOut"=dword:00000001
+"HttpAcceptLanguageOptOut"=dword:00000001;Privacy > General > Let websites provide locally relevant content by accessing my language list
 
-;Inking & typing personalization
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\InputPersonalization\TrainedDataStore]
-"HarvestContacts"=dword:00000000
+"HarvestContacts"=dword:00000000;Privacy > Inking & typing personalization > Use your typing history and handwriting patterns to create a personal dictionary that makes better suggestions for you.
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Personalization\Settings]
-"AcceptedPrivacyPolicy"=dword:00000000
+"AcceptedPrivacyPolicy"=dword:00000000;Privacy > Inking & typing personalization > Use your typing history and handwriting patterns to create a personal dictionary that makes better suggestions for you.
 
-;Location
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location]
-"Value"="Deny"
+"Value"="Deny";Privacy > Location
 
-;Camera
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam]
-"Value"="Deny"
+"Value"="Deny";Privacy > Camera
 
-;Notifications
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userNotificationListener]
-"Value"="Deny"
+"Value"="Deny";Privacy > Notifications
 
-;Account info
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userAccountInformation]
-"Value"="Deny"
+"Value"="Deny";Privacy > Account info
 
-;Contacts
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\contacts]
-"Value"="Deny"
+"Value"="Deny";Privacy > Contacts
 
-;Calendar
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\appointments]
-"Value"="Deny"
+"Value"="Deny";Privacy > Calendar
 
-;Phone calls
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\phoneCall]
-"Value"="Deny"
+"Value"="Deny";Privacy > Phone calls
 
-;Call history
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\phoneCallHistory]
-"Value"="Deny"
+"Value"="Deny";Privacy > Call history
 
-;Email
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\email]
-"Value"="Deny"
+"Value"="Deny";Privacy > Email
 
-;Tasks
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userDataTasks]
-"Value"="Deny"
+"Value"="Deny";Privacy > Tasks
 
-;Messaging
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\chat]
-"Value"="Deny"
+"Value"="Deny";Privacy > Messaging
 
-;Radios
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\radios]
-"Value"="Deny"
+"Value"="Deny";Privacy > Radios
 
-;Other devices
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\bluetoothSync]
-"Value"="Deny"
+"Value"="Deny";Privacy > Other devices
 
-;App diagnostics
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\appDiagnostics]
-"Value"="Deny"
+"Value"="Deny";Privacy > App diagnostics
 
-;Documents
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\documentsLibrary]
-"Value"="Deny"
+"Value"="Deny";Privacy > Documents
 
-;Pictures
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\picturesLibrary]
-"Value"="Deny"
+"Value"="Deny";Privacy > Pictures
 
-;Videos
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\videosLibrary]
-"Value"="Deny"
+"Value"="Deny";Privacy > Videos
 
-;File System
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\broadFileSystemAccess]
-"Value"="Deny"
+"Value"="Deny";Privacy > File System
 
-;Delivery Optimization
 [HKEY_USERS\S-1-5-20\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Settings]
-"DownloadMode"=dword:00000000
+"DownloadMode"=dword:00000000;Update & Security > Delivery Optimization > Allow downloads from other PCs
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\DontShowMeThisDialogAgain]
 "{948e51fb-0a48-44f0-86ac-33c36def540c}"="NO";Programs and Features uninstall confirmation prompt box

@@ -1,284 +1,264 @@
 Windows Registry Editor Version 5.00
 ;SETTINGS;
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\PushNotifications]
-"ToastEnabled"=dword:00000000 ; System > Notifications - Notifications (Off)
+"ToastEnabled"=dword:00000000 ;System > Notifications - Notifications (Off)
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
-"SubscribedContent-310093Enabled"=dword:00000000 ; System > Notifications - Show the Windows welcome experience after updates and when signed in to show what's new and suggested (Off)
-"SubscribedContent-338389Enabled"=dword:00000000 ; System > Notifications - Get tips and suggestions when using Windows (Off)
-"RotatingLockScreenOverlayEnabled"=dword:00000000 ; Personalization > Lock screen - Get fun facts, tips, tricks, and more on your lock screen (Off)
-"SubscribedContent-338387Enabled"=dword:00000000 ; Personalization > Lock screen - Get fun facts, tips, tricks, and more on your lock screen (Off)
-"SubscribedContent-338393Enabled"=dword:00000000 ; Privacy & security > General - Show me suggested content in the Settings app (Off)
-"SubscribedContent-353694Enabled"=dword:00000000 ; Privacy & security > General - Show me suggested content in the Settings app (Off)
-"SubscribedContent-353696Enabled"=dword:00000000 ; Privacy & security > General - Show me suggested content in the Settings app (Off)
+"SubscribedContent-310093Enabled"=dword:00000000 ;System > Notifications - Show the Windows welcome experience after updates and when signed in to show what's new and suggested (Off)
+"SubscribedContent-338389Enabled"=dword:00000000 ;System > Notifications - Get tips and suggestions when using Windows (Off)
+"RotatingLockScreenOverlayEnabled"=dword:00000000 ;Personalization > Lock screen - Get fun facts, tips, tricks, and more on your lock screen (Off)
+"SubscribedContent-338387Enabled"=dword:00000000 ;Personalization > Lock screen - Get fun facts, tips, tricks, and more on your lock screen (Off)
+"SubscribedContent-338393Enabled"=dword:00000000 ;Privacy & security > General - Show me suggested content in the Settings app (Off)
+"SubscribedContent-353694Enabled"=dword:00000000 ;Privacy & security > General - Show me suggested content in the Settings app (Off)
+"SubscribedContent-353696Enabled"=dword:00000000 ;Privacy & security > General - Show me suggested content in the Settings app (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\StorageSense]
-"AllowStorageSenseGlobal"=dword:00000000 ; System > Storage - Storage Sense (Off, GPO)
+"AllowStorageSenseGlobal"=dword:00000000;System > Storage - Storage Sense (Off, GPO)
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
-"ShowFrequent"=dword:00000000 ; File Explorer Options > General - Show frequently used folders (Off)
+"ShowFrequent"=dword:00000000;File Explorer Options > General - Show frequently used folders (Off)
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"SnapAssist"=dword:00000000 ; System > Multitasking > Snap windows - When I snap a window, suggest what I can snap next to it (Off)
-"EnableSnapAssistFlyout"=dword:00000000 ; System > Multitasking > Snap windows - Show snap layouts when I hover over a window's maximize button (Off)
-"EnableSnapBar"=dword:00000000 ; System > Multitasking > Snap windows - Show snap layouts when I drag a window to the top of my screen (Off)
-"EnableTaskGroups"=dword:00000000 ; System > Multitasking > Snap windows - Show my snapped windows when I hover over taskbar apps, in Task View, and when I press Alt+Tab (Off)
-"MultiTaskingAltTabFilter"=dword:00000003 ; System > Multitasking > Show tabs from apps when snapping or pressing Alt+Tab = Don't show tabs
-"Start_Layout"=dword:00000001 ; Personalization > Start - Layout = More pins
-"Start_IrisRecommendations"=dword:00000000 ; Personalization > Start - Show recommendations for tips, shortcuts, new apps, and more (Off)
-"TaskbarGlomLevel"=dword:00000002 ; Personalization > Taskbar > Taskbar behaviors - Combine taskbar buttons and hide labels = Never
-"TaskbarAl"=dword:00000000 ; Personalization > Taskbar > Taskbar behaviors - Taskbar alignment = Left
-"ShowTaskViewButton"=dword:00000000 ; Personalization > Taskbar > Taskbar items - Task view (Off)
-"Hidden"=dword:00000001 ; File Explorer Options > View - Hidden files and folders = Show hidden files, folders, and drives.
-"HideFileExt"=dword:00000000 ; File Explorer Options > View - Hide extensions for known file types (Off)
-"LaunchTo"=dword:00000001 ; File Explorer Options > General - Open file explorer to = This PC
-"ShowSyncProviderNotifications"=dword:00000000 ; File Explorer Options > View - Show sync provider notifications (Off)
-"UseCompactMode"=dword:00000001 ; File Explorer Options > View - Decrease space between items (compact view, On)
+"MultiTaskingAltTabFilter"=dword:00000003;System > Multitasking > Show tabs from apps when snapping or pressing Alt+Tab = Don't show tabs
+"Start_Layout"=dword:00000001;Personalization > Start - Layout = More pins
+"Start_IrisRecommendations"=dword:00000000;Personalization > Start - Show recommendations for tips, shortcuts, new apps, and more (Off)
+"TaskbarGlomLevel"=dword:00000002;Personalization > Taskbar > Taskbar behaviors - Combine taskbar buttons and hide labels = Never
+"TaskbarAl"=dword:00000000;Personalization > Taskbar > Taskbar behaviors - Taskbar alignment = Left
+"ShowTaskViewButton"=dword:00000000;Personalization > Taskbar > Taskbar items - Task view (Off)
+"Hidden"=dword:00000001;File Explorer Options > View - Hidden files and folders = Show hidden files, folders, and drives.
+"HideFileExt"=dword:00000000;File Explorer Options > View - Hide extensions for known file types (Off)
+"LaunchTo"=dword:00000001;File Explorer Options > General - Open file explorer to = This PC
+"ShowSyncProviderNotifications"=dword:00000000;File Explorer Options > View - Show sync provider notifications (Off)
+"UseCompactMode"=dword:00000001;File Explorer Options > View - Decrease space between items (compact view, On)
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
-"SearchboxTaskbarMode"=dword:00000000 ; Personalization > Taskbar > Taskbar items - Search = Hide
+"SearchboxTaskbarMode"=dword:00000000;Personalization > Taskbar > Taskbar items - Search = Hide
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SmartActionPlatform\SmartClipboard]
-"Disabled"=dword:00000001 ; System > Clipboard - Suggested actions (Off)
+"Disabled"=dword:00000001;System > Clipboard - Suggested actions (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore]
-"DisableSR"=dword:00000001 ; System > About > System protection (Off, GPO)
+"DisableSR"=dword:00000001;System > About > System protection (Off, GPO)
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows]
-"LegacyDefaultPrinterMode"=dword:00000001 ; Bluetooth & devices > Printers & scanners - Let Windows manage my default printer (Off)
+"LegacyDefaultPrinterMode"=dword:00000001;Bluetooth & devices > Printers & scanners - Let Windows manage my default printer (Off)
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers]
-"DisableAutoplay"=dword:00000001 ; Bluetooth & devices > AutoPlay - Use AutoPlay for all media and devices (Off)
+"DisableAutoplay"=dword:00000001;Bluetooth & devices > AutoPlay - Use AutoPlay for all media and devices (Off)
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ShellHWDetection]
-"Start"=dword:00000004 ; Services > Shell Hardware Detection (Disabled) Provides notifications for AutoPlay hardware events
+"Start"=dword:00000004;Services > Shell Hardware Detection (Disabled) Provides notifications for AutoPlay hardware events
 
 [HKEY_CURRENT_USER\Software\Microsoft\Shell\USB]
-"NotifyOnUsbErrors"=dword:00000000 ; Bluetooth & devices > USB - Connection notifications (Off)
+"NotifyOnUsbErrors"=dword:00000000;Bluetooth & devices > USB - Connection notifications (Off)
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings]
-"AutoConfigURL"="https://p.thenewone.lol:8443/proxy.pac" ; Network & internet > Proxy > Use setup script - Script address
+"AutoConfigURL"="https://p.thenewone.lol:8443/proxy.pac";Network & internet > Proxy > Use setup script - Script address
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]
-"EnableTransparency"=dword:00000000 ; Personalization > Colors - Transparency effects (Off)
+"EnableTransparency"=dword:00000000;Personalization > Colors - Transparency effects (Off)
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
-"{645FF040-5081-101B-9F08-00AA002F954E}"=dword:00000001 ; Personalization > Themes > Desktop Icon Settings - Recycle Bin (Off)
+"{645FF040-5081-101B-9F08-00AA002F954E}"=dword:00000001;Personalization > Themes > Desktop Icon Settings - Recycle Bin (Off)
 
 [HKEY_CURRENT_USER\Software\Microsoft\Lighting]
-"AmbientLightingEnabled"=dword:00000000 ; Personalization > Dynamic Lighting - Use Dynamic Lighting on my devices (Off)
-"ControlledByForegroundApp"=dword:00000000 ; Personalization > Dynamic Lighting - Compatible apps in the foreground always control lighting (Off)
+"AmbientLightingEnabled"=dword:00000000;Personalization > Dynamic Lighting - Use Dynamic Lighting on my devices (Off)
+"ControlledByForegroundApp"=dword:00000000;Personalization > Dynamic Lighting - Compatible apps in the foreground always control lighting (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
-"HideRecentlyAddedApps"=dword:00000001 ; Personalization > Start - Show recently added apps (Off, GPO)
-"DisableSearchBoxSuggestions"=dword:00000001 ; Web Windows Search suggestions (Off, GPO)
-"DisableGraphRecentItems"=dword:00000001 ; File Explorer Options > General - Show files from Office.com (Off, GPO)
+"HideRecentlyAddedApps"=dword:00000001;Personalization > Start - Show recently added apps (Off, GPO)
+"DisableSearchBoxSuggestions"=dword:00000001;Web Windows Search suggestions (Off, GPO)
+"DisableGraphRecentItems"=dword:00000001;File Explorer Options > General - Show files from Office.com (Off, GPO)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
-"NoRecentDocsHistory"=dword:00000001 ; Personalization > Start - Show recently opened items in Start, Jump Lists, and File Explorer (Off, GPO)
-"AllowOnlineTips"=dword:00000000 ; Online tips and help for the Settings app (Off, GPO)
-"ForceClassicControlPanel"=dword:00000001 ; Always open All Control Panel Items when opening Control Panel (On, GPO)
+"NoRecentDocsHistory"=dword:00000001;Personalization > Start - Show recently opened items in Start, Jump Lists, and File Explorer (Off, GPO)
+"AllowOnlineTips"=dword:00000000;Online tips and help for the Settings app (Off, GPO)
+"ForceClassicControlPanel"=dword:00000001;Always open All Control Panel Items when opening Control Panel (On, GPO)
 
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\WindowsCopilot]
-"TurnOffWindowsCopilot"=dword:00000001 ; Personalization > Taskbar > Taskbar items - Copilot (Off, GPO)
+"TurnOffWindowsCopilot"=dword:00000001;Personalization > Taskbar > Taskbar items - Copilot (Off, GPO)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Dsh]
-"AllowNewsAndInterests"=dword:00000000 ; Personalization > Taskbar > Taskbar items - Widgets (Off, GPO)
+"AllowNewsAndInterests"=dword:00000000;Personalization > Taskbar > Taskbar items - Widgets (Off, GPO)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\NewsAndInterests\AllowNewsAndInterests]
-"value"=dword:00000000 ; Personalization > Taskbar > Taskbar items - Widgets (Off, GPO)
+"value"=dword:00000000;Personalization > Taskbar > Taskbar items - Widgets (Off, GPO)
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CDP]
-"RomeSdkChannelUserAuthzPolicy"=dword:00000000 ; Apps > Advanced app settings - Share across devices = Off
+"RomeSdkChannelUserAuthzPolicy"=dword:00000000;Apps > Advanced app settings - Share across devices = Off
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\InstallService\Stubification\S-1-5-21-2382106621-2516132381-22498616-1001]
-"EnableAppOffloading"=dword:00000000 ; Apps > Advanced app settings - Archive apps (Off)
+"EnableAppOffloading"=dword:00000000;Apps > Advanced app settings - Archive apps (Off)
 
 [HKEY_LOCAL_MACHINE\SYSTEM\Maps]
-"AutoUpdateEnabled"=dword:00000000 ; Apps > Offline maps > Map updates - Update automatically when plugged in and on Wi-Fi (Off)
+"AutoUpdateEnabled"=dword:00000000;Apps > Offline maps > Map updates - Update automatically when plugged in and on Wi-Fi (Off)
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run];Apps > Startup - Windows Security notification icon removal
+"SecurityHealth"=-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run];Apps > Startup - Windows Security notification icon removal
+"SecurityHealth"=-
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
-"DisableAutomaticRestartSignOn"=dword:00000001 ; Accounts > Sign-in options - Use my sign-in info to automatically finish setting up after an update (Off, GPO)
-"VerboseStatus"=dword:00000001 ; Verbose Logon Messages (On, GPO)
-"ConsentPromptBehaviorAdmin"=dword:00000000 ; UAC (Off, GPO)
-"PromptOnSecureDesktop"=dword:00000000 ; UAC (Off, GPO)
-"EnableLUA"=dword:00000001 ; UAC (Off, GPO)
+"DisableAutomaticRestartSignOn"=dword:00000001;Accounts > Sign-in options - Use my sign-in info to automatically finish setting up after an update (Off, GPO)
+"VerboseStatus"=dword:00000001;Verbose Logon Messages (On, GPO)
+"ConsentPromptBehaviorAdmin"=dword:00000000;UAC (Off, GPO)
+"PromptOnSecureDesktop"=dword:00000000;UAC (Off, GPO)
+"EnableLUA"=dword:00000001;UAC (Off, GPO)
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]
-"TimeZoneKeyName"="Saratov Standard Time" ; Time and language > Date & time - Time zone = (UTC+04:00) Saratov
+"TimeZoneKeyName"="Saratov Standard Time";Time and language > Date & time - Time zone = (UTC+04:00) Saratov
 
 [HKEY_CURRENT_USER\Control Panel\International]
-"iFirstDayOfWeek"="0" ; Time & language > Language & region > Regional format - First day of week = Monday
-"sShortDate"="yyyy-MM-dd" ; Time & language > Language & region > Regional format - Short date = 1999-12-31
-"sLongDate"="MMMM d, yyyy" ; Time & language > Language & region > Regional format - Long date = December 31, 1999
-"sShortTime"="HH:mm" ; Time & language > Language & region > Regional format - Short time = 23:59
-"sTimeFormat"="HH:mm:ss" ; Time & language > Language & region > Regional format - Long time = 23:59:59
-
-[HKEY_CURRENT_USER\Software\Microsoft\TabletTip\1.7]
-"EnableAutocorrection"=dword:00000000 ; Time & language > Typing - Autocorrect misspelled words (Off)
-"EnableSpellchecking"=dword:00000000 ; Time & language > Typing - Highlight misspelled words (Off)
+"iFirstDayOfWeek"="0";Time & language > Language & region > Regional format - First day of week = Monday
+"sShortDate"="yyyy-MM-dd";Time & language > Language & region > Regional format - Short date = 1999-12-31
+"sLongDate"="MMMM d, yyyy";Time & language > Language & region > Regional format - Long date = December 31, 1999
+"sShortTime"="HH:mm";Time & language > Language & region > Regional format - Short time = 23:59
+"sTimeFormat"="HH:mm:ss";Time & language > Language & region > Regional format - Long time = 23:59:59
 
 [HKEY_CURRENT_USER\Software\Microsoft\Input\Settings]
-"InsightsEnabled"=dword:00000000 ; Time & language > Typing > Typing insights - Typing insights (Off)
+"InsightsEnabled"=dword:00000000;Time & language > Typing > Typing insights - Typing insights (Off)
 
 [HKEY_CURRENT_USER\Software\Microsoft\GameBar]
-"UseNexusForGameBarEnabled"=dword:00000000 ; Gaming > Game Bar - Allow your controller to open Game Bar (Off)
-"AutoGameModeEnabled"=dword:00000000 ; Gaming > Game Mode - Game Mode (Off)
-"AllowAutoGameMode"=dword:00000000 ; Auto Game Mode (Off)
+"UseNexusForGameBarEnabled"=dword:00000000;Gaming > Game Bar - Allow your controller to open Game Bar (Off)
+"AutoGameModeEnabled"=dword:00000000;Gaming > Game Mode - Game Mode (Off)
+"AllowAutoGameMode"=dword:00000000;Auto Game Mode (Off)
 
 [HKEY_CURRENT_USER\System\GameConfigStore]
-"GameDVR_Enabled"=dword:00000000 ; Xbox DVR (Off)
+"GameDVR_Enabled"=dword:00000000;Xbox DVR (Off)
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR]
-"AppCaptureEnabled"=dword:00000000 ; Record game clips and screenshots using Game DVR (Off)
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Sense]
-"Start"=dword:00000004 ; Services > Windows Defender Advanced Threat Protection Service (Disabled) Windows Defender Advanced Threat Protection service helps protect against advanced threats by monitoring and reporting security events that happen on the computer.
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdBoot]
-"Start"=dword:00000004
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdFilter]
-"Start"=dword:00000004
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdNisDrv]
-"Start"=dword:00000004
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdNisSvc]
-"Start"=dword:00000004 ; Services > Microsoft Defender Antivirus Network Inspection Service (Disabled) Helps guard against intrusion attempts targeting known and newly discovered vulnerabilities in network protocols
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinDefend]
-"Start"=dword:00000004 ; Services > Microsoft Defender Antivirus Service (Disabled) Helps protect users from malware and other potentially unwanted software
+"AppCaptureEnabled"=dword:00000000;Record game clips and screenshots using Game DVR (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\FindMyDevice]
-"AllowFindMyDevice"=dword:00000000 ; Privacy & security > Find my device (Off, GPO)
+"AllowFindMyDevice"=dword:00000000;Privacy & security > Find my device (Off, GPO)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AdvertisingInfo]
-"DisabledByGroupPolicy"=dword:00000001 ; Privacy & security > General - Let apps show me personalized ads by using my advertising ID (Off, GPO)
+"DisabledByGroupPolicy"=dword:00000001;Privacy & security > General - Let apps show me personalized ads by using my advertising ID (Off, GPO)
 
 [HKEY_CURRENT_USER\Control Panel\International\User Profile]
-"HttpAcceptLanguageOptOut"=dword:00000001 ; Privacy & security > General - Let websites show me locally relevant content by accessing my language list (Off)
+"HttpAcceptLanguageOptOut"=dword:00000001;Privacy & security > General - Let websites show me locally relevant content by accessing my language list (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\EdgeUI]
-"DisableMFUTracking"=dword:00000001 ; Privacy & security > General - Let Windows improve Start and search results by tracking app launches (Off, GPO)
+"DisableMFUTracking"=dword:00000001;Privacy & security > General - Let Windows improve Start and search results by tracking app launches (Off, GPO)
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CPSS\Store\InkingAndTypingPersonalization]
-"Value"=dword:00000000 ; Privacy & security > Inking & typing personalization - Custom inking and typing dictionary (Off)
+"Value"=dword:00000000;Privacy & security > Inking & typing personalization - Custom inking and typing dictionary (Off)
 
 [HKEY_CURRENT_USER\Software\Microsoft\Personalization\Settings]
-"AcceptedPrivacyPolicy"=dword:00000000 ; Privacy & security > Inking & typing personalization - Custom inking and typing dictionary (Off)
+"AcceptedPrivacyPolicy"=dword:00000000;Privacy & security > Inking & typing personalization - Custom inking and typing dictionary (Off)
 
 [HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization]
-"RestrictImplicitInkCollection"=dword:00000001 ; Privacy & security > Inking & typing personalization - Custom inking and typing dictionary (Off)
-"RestrictImplicitTextCollection"=dword:00000001 ; Privacy & security > Inking & typing personalization - Custom inking and typing dictionary (Off)
+"RestrictImplicitInkCollection"=dword:00000001;Privacy & security > Inking & typing personalization - Custom inking and typing dictionary (Off)
+"RestrictImplicitTextCollection"=dword:00000001;Privacy & security > Inking & typing personalization - Custom inking and typing dictionary (Off)
 
 [HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization\TrainedDataStore]
-"HarvestContacts"=dword:00000000 ; Privacy & security > Inking & typing personalization - Custom inking and typing dictionary (Off)
+"HarvestContacts"=dword:00000000;Privacy & security > Inking & typing personalization - Custom inking and typing dictionary (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
-"AllowTelemetry"=dword:00000000 ; Privacy & security > Diagnostics & feedback - Diagnostic data (Off, GPO)
-"DoNotShowFeedbackNotifications"=dword:00000001 ; Privacy & security > Diagnostics & feedback - Feedback frequency (Off, GPO)
+"AllowTelemetry"=dword:00000000;Privacy & security > Diagnostics & feedback - Diagnostic data (Off, GPO)
+"DoNotShowFeedbackNotifications"=dword:00000001;Privacy & security > Diagnostics & feedback - Feedback frequency (Off, GPO)
 
 [HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
-"DisableTailoredExperiencesWithDiagnosticData"=dword:00000001 ; Privacy & security > Diagnostics & feedback - Tailored experiences (Off, GPO)
+"DisableTailoredExperiencesWithDiagnosticData"=dword:00000001;Privacy & security > Diagnostics & feedback - Tailored experiences (Off, GPO)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
-"PublishUserActivities"=dword:00000000 ; Privacy & security > Activity history > Store my activity history on this device (Off, GPO)
-"EnableSmartScreen"=dword:00000000 ; Windows Security > App & browser control > Reputation-based protection settings - Check apps and files (Off, GPO)
+"PublishUserActivities"=dword:00000000;Privacy & security > Activity history > Store my activity history on this device (Off, GPO)
+"EnableSmartScreen"=dword:00000000;Windows Security > App & browser control > Reputation-based protection settings - Check apps and files (Off, GPO)
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\SearchSettings]
-"SafeSearchMode"=dword:00000000 ; Privacy & security > Search permissions - SafeSearch (Off)
-"IsDeviceSearchHistoryEnabled"=dword:00000000 ; Privacy & security > Search permissions - Search history on this device (Off)
+"SafeSearchMode"=dword:00000000;Privacy & security > Search permissions - SafeSearch (Off)
+"IsDeviceSearchHistoryEnabled"=dword:00000000;Privacy & security > Search permissions - Search history on this device (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
-"AllowCloudSearch"=dword:00000000 ; Privacy & security > Search permissions - Cloud content search (Off, GPO)
+"AllowCloudSearch"=dword:00000000;Privacy & security > Search permissions - Cloud content search (Off, GPO)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location]
-"Value"="Deny" ; Privacy & security > Location - Location services (Off)
+"Value"="Deny";Privacy & security > Location - Location services (Off)
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CPSS\Store\UserLocationOverridePrivacySetting]
-"Value"=dword:00000000 ; Privacy & security > Location - Allow location override (Off)
+"Value"=dword:00000000;Privacy & security > Location - Allow location override (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam]
-"Value"="Deny" ; Privacy & security > Camera - Camera access (Off)
+"Value"="Deny";Privacy & security > Camera - Camera access (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userNotificationListener]
-"Value"="Deny" ; Privacy & security > Notifications - Notification access (Off)
+"Value"="Deny";Privacy & security > Notifications - Notification access (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userAccountInformation]
-"Value"="Deny" ; Privacy & security > Account info - Account info access (Off)
+"Value"="Deny";Privacy & security > Account info - Account info access (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\contacts]
-"Value"="Deny" ; Privacy & security > Contacts - Contacts access (Off)
+"Value"="Deny";Privacy & security > Contacts - Contacts access (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\appointments]
-"Value"="Deny" ; Privacy & security > Calendar - Calendar access (Off)
+"Value"="Deny";Privacy & security > Calendar - Calendar access (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\phoneCall]
-"Value"="Deny" ; Privacy & security > Phone calls - Phone call access (Off)
+"Value"="Deny";Privacy & security > Phone calls - Phone call access (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\phoneCallHistory]
-"Value"="Deny" ; Privacy & security > Call history - Call history access (Off)
+"Value"="Deny";Privacy & security > Call history - Call history access (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\email]
-"Value"="Deny" ; Privacy & security > Email - Email access (Off)
+"Value"="Deny";Privacy & security > Email - Email access (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userDataTasks]
-"Value"="Deny" ; Privacy & security > Tasks - Tasks access (Off)
+"Value"="Deny";Privacy & security > Tasks - Tasks access (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\chat]
-"Value"="Deny" ; Privacy & security > Messaging - Messaging access (Off)
+"Value"="Deny";Privacy & security > Messaging - Messaging access (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\radios]
-"Value"="Deny" ; Privacy & security > Radios - Radio control access (Off)
+"Value"="Deny";Privacy & security > Radios - Radio control access (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\bluetoothSync]
-"Value"="Deny" ; Privacy & security > Other devices - Communicate with unpaired devices (Off)
+"Value"="Deny";Privacy & security > Other devices - Communicate with unpaired devices (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\appDiagnostics]
-"Value"="Deny" ; Privacy & security > App diagnostics - App diagnostic access (Off)
+"Value"="Deny";Privacy & security > App diagnostics - App diagnostic access (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\documentsLibrary]
-"Value"="Deny" ; Privacy & security > Documents - Documents library access (Off)
+"Value"="Deny";Privacy & security > Documents - Documents library access (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\downloadsFolder]
-"Value"="Deny" ; Privacy & security > Downloads folder - Downloads folder access (Off)
+"Value"="Deny";Privacy & security > Downloads folder - Downloads folder access (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\musicLibrary]
-"Value"="Deny" ; Privacy & security > Music library - Allow access to music libraries on this device (Off)
+"Value"="Deny";Privacy & security > Music library - Allow access to music libraries on this device (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\picturesLibrary]
-"Value"="Deny" ; Privacy & security > Pictures - Pictures library access (Off)
+"Value"="Deny";Privacy & security > Pictures - Pictures library access (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\videosLibrary]
-"Value"="Deny" ; Privacy & security > Videos - Videos library access (Off)
+"Value"="Deny";Privacy & security > Videos - Videos library access (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\broadFileSystemAccess]
-"Value"="Deny" ; Privacy & security > File system - File system access (Off)
+"Value"="Deny";Privacy & security > File system - File system access (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\graphicsCaptureWithoutBorder]
-"Value"="Deny" ; Privacy & security > Screenshot borders - Screenshot border settings access (Off)
+"Value"="Deny";Privacy & security > Screenshot borders - Screenshot border settings access (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\graphicsCaptureProgrammatic]
-"Value"="Deny" ; Privacy & security > Screenshots and apps - Screenshots access (Off)
+"Value"="Deny";Privacy & security > Screenshots and apps - Screenshots access (Off)
 
 [HKEY_USERS\S-1-5-20\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Settings]
-"DownloadMode"=dword:00000000 ; Windows Update > Advanced options > Delivery Optimization - Allow downloads from other PCs (Off)
+"DownloadMode"=dword:00000000;Windows Update > Advanced options > Delivery Optimization - Allow downloads from other PCs (Off)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
-"NoAutoUpdate"=dword:00000001 ; Windows Automatic Updates (Off, GPO)
+"NoAutoUpdate"=dword:00000001;Windows Automatic Updates (Off, GPO)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MRT]
-"DontOfferThroughWUAU"=dword:00000001 ; Disable Malicious Software Removal Tool From Installing (On, GPO)
+"DontOfferThroughWUAU"=dword:00000001;Disable Malicious Software Removal Tool From Installing (On, GPO)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat]
-"DisablePCA"=dword:00000001 ; Turn off Program Compatibility Assistant (On, GPO)
+"DisablePCA"=dword:00000001;Turn off Program Compatibility Assistant (On, GPO)
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\DontShowMeThisDialogAgain]
-"{948e51fb-0a48-44f0-86ac-33c36def540c}"="NO" ; Programs and Features uninstall confirmation prompt box (Off)
+"{948e51fb-0a48-44f0-86ac-33c36def540c}"="NO";Programs and Features uninstall confirmation prompt box (Off)
 
 [HKEY_CURRENT_USER\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}]
-@="" ; Classic context menu
+@="";Classic context menu
 
 [HKEY_CURRENT_USER\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32]
-@="" ; Classic context menu
+@="";Classic context menu
