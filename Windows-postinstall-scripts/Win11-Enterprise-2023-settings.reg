@@ -173,74 +173,8 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "AllowCloudSearch"=dword:00000000;Privacy & security > Search permissions - Cloud content search (Off, GPO)
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location]
-"Value"="Deny";Privacy & security > Location - Location services (Off)
-
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CPSS\Store\UserLocationOverridePrivacySetting]
 "Value"=dword:00000000;Privacy & security > Location - Allow location override (Off)
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam]
-"Value"="Deny";Privacy & security > Camera - Camera access (Off)
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userNotificationListener]
-"Value"="Deny";Privacy & security > Notifications - Notification access (Off)
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userAccountInformation]
-"Value"="Deny";Privacy & security > Account info - Account info access (Off)
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\contacts]
-"Value"="Deny";Privacy & security > Contacts - Contacts access (Off)
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\appointments]
-"Value"="Deny";Privacy & security > Calendar - Calendar access (Off)
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\phoneCall]
-"Value"="Deny";Privacy & security > Phone calls - Phone call access (Off)
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\phoneCallHistory]
-"Value"="Deny";Privacy & security > Call history - Call history access (Off)
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\email]
-"Value"="Deny";Privacy & security > Email - Email access (Off)
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userDataTasks]
-"Value"="Deny";Privacy & security > Tasks - Tasks access (Off)
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\chat]
-"Value"="Deny";Privacy & security > Messaging - Messaging access (Off)
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\radios]
-"Value"="Deny";Privacy & security > Radios - Radio control access (Off)
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\bluetoothSync]
-"Value"="Deny";Privacy & security > Other devices - Communicate with unpaired devices (Off)
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\appDiagnostics]
-"Value"="Deny";Privacy & security > App diagnostics - App diagnostic access (Off)
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\documentsLibrary]
-"Value"="Deny";Privacy & security > Documents - Documents library access (Off)
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\downloadsFolder]
-"Value"="Deny";Privacy & security > Downloads folder - Downloads folder access (Off)
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\musicLibrary]
-"Value"="Deny";Privacy & security > Music library - Allow access to music libraries on this device (Off)
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\picturesLibrary]
-"Value"="Deny";Privacy & security > Pictures - Pictures library access (Off)
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\videosLibrary]
-"Value"="Deny";Privacy & security > Videos - Videos library access (Off)
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\broadFileSystemAccess]
-"Value"="Deny";Privacy & security > File system - File system access (Off)
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\graphicsCaptureWithoutBorder]
-"Value"="Deny";Privacy & security > Screenshot borders - Screenshot border settings access (Off)
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\graphicsCaptureProgrammatic]
-"Value"="Deny";Privacy & security > Screenshots and apps - Screenshots access (Off)
 
 [HKEY_USERS\S-1-5-20\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Settings]
 "DownloadMode"=dword:00000000;Windows Update > Advanced options > Delivery Optimization - Allow downloads from other PCs (Off)
