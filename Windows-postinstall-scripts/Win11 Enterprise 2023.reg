@@ -71,7 +71,6 @@ Windows Registry Editor Version 5.00
 "DisableGraphRecentItems"=dword:00000001;File Explorer Options > General - Show files from Office.com (Off, GPO)
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
-"NoRecentDocsHistory"=dword:00000001;Personalization > Start - Show recently opened items in Start, Jump Lists, and File Explorer (Off, GPO)
 "AllowOnlineTips"=dword:00000000;Online tips and help for the Settings app (Off, GPO)
 "ForceClassicControlPanel"=dword:00000001;Always open All Control Panel Items when opening Control Panel (On, GPO)
 

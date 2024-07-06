@@ -4,33 +4,19 @@ Windows Registry Editor Version 5.00
 "ShowRecommendationsEnabled"=dword:00000000;Allow feature recommendations and browser assistance notifications from Microsoft Edge,Disabled,\Microsoft Edge
 "ShowPDFDefaultRecommendationsEnabled"=dword:00000000;Allow notifications to set Microsoft Edge as default PDF reader,Disabled,\Microsoft Edge\Content settings
 "PersonalizationReportingEnabled"=dword:00000000;Allow personalization of ads, Microsoft Edge, search, news and other Microsoft services by sending browsing history, favorites and collections, usage and other browsing data to Microsoft,Disabled,\Microsoft Edge
-"MSAWebSiteSSOUsingThisProfileAllowed"=dword:00000000;Allow single sign-on for Microsoft personal sites using this profile,Disabled,\Microsoft Edge
 "UserFeedbackAllowed"=dword:00000000;Allow user feedback,Disabled,\Microsoft Edge
 "FamilySafetySettingsEnabled"=dword:00000000;Allow users to configure Family safety and Kids Mode,Disabled,\Microsoft Edge
 "PaymentMethodQueryEnabled"=dword:00000000;Allow websites to query for available payment methods,Disabled,\Microsoft Edge
-"BlockThirdPartyCookies"=dword:00000000;Block third party cookies,Disabled,\Microsoft Edge
 "TrackingPrevention"=dword:00000000;Block tracking of users' web-browsing activity,Enabled,\Microsoft Edge
 "BrowserSignin"=dword:00000000;Browser sign-in settings,Enabled,\Microsoft Edge
 "SpotlightExperiencesAndRecommendationsEnabled"=dword:00000000;Choose whether users can receive customized background images and text, suggestions, notifications, and tips for Microsoft services,Disabled,\Microsoft Edge\Content settings
-"TyposquattingCheckerEnabled"=dword:00000000;Configure Edge Website Typo Protection,Disabled,\Microsoft Edge\Edge Website Typo Protection settings
 "InternetExplorerIntegrationLevel"=dword:00000000;Configure Internet Explorer integration,Enabled,\Microsoft Edge
-"SleepingTabsEnabled"=dword:00000000;Configure sleeping tabs,Disabled,\Microsoft Edge\Sleeping tabs settings
-"BackgroundModeEnabled"=dword:00000000;Continue running background apps after Microsoft Edge closes,Disabled,\Microsoft Edge
 "DnsOverHttpsMode"="off";Control the mode of DNS-over-HTTPS,Enabled,\Microsoft Edge
-"Edge3PSerpTelemetryEnabled"=dword:00000000;Edge 3P SERP Telemetry Enabled,Disabled,\Microsoft Edge
-"EdgeWalletEtreeEnabled"=dword:00000000;Edge Wallet E-Tree Enabled,Disabled,\Microsoft Edge
-"EfficiencyModeEnabled"=dword:00000000;Efficiency mode enabled,Disabled,\Microsoft Edge\Performance
 "CryptoWalletEnabled"=dword:00000000;Enable CryptoWallet feature,Disabled,\Microsoft Edge
 "EdgeFollowEnabled"=dword:00000000;Enable Follow service in Microsoft Edge,Disabled,\Microsoft Edge
 "PromotionalTabsEnabled"=dword:00000000;Enable full-tab promotional content,Disabled,\Microsoft Edge
-"GamerModeEnabled"=dword:00000000;Enable Gamer Mode,Disabled,\Microsoft Edge\Games settings
 "AddressBarMicrosoftSearchInBingProviderEnabled"=dword:00000000;Enable Microsoft Search in Bing suggestions in the address bar,Disabled,\Microsoft Edge
-"NetworkPredictionOptions"=dword:00000002;Enable network prediction,Enabled,\Microsoft Edge
-"NewTabPagePrerenderEnabled"=dword:00000000;Enable preload of the new tab page for faster rendering,Disabled,\Microsoft Edge\Startup, home page and new tab page
-"SearchSuggestEnabled"=dword:00000000;Enable search suggestions,Disabled,\Microsoft Edge
-"StartupBoostEnabled"=dword:00000000;Enable startup boost,Disabled,\Microsoft Edge\Performance
 "TabServicesEnabled"=dword:00000000;Enable tab organization suggestions,Disabled,\Microsoft Edge
-"LocalBrowserDataShareEnabled"=dword:00000000;Enable Windows to search local Microsoft Edge browsing data,Disabled,\Microsoft Edge
 "AIGenThemesEnabled"=dword:00000000;Enables DALL-E themes generation,Disabled,\Microsoft Edge
 "DefaultBrowserSettingsCampaignEnabled"=dword:00000000;Enables default browser settings campaigns,Disabled,\Microsoft Edge
 "ForceBingSafeSearch"=dword:00000000;Enforce Bing SafeSearch,Enabled,\Microsoft Edge
@@ -38,18 +24,33 @@ Windows Registry Editor Version 5.00
 "HideFirstRunExperience"=dword:00000001;Hide the First-run experience and splash screen,Enabled,\Microsoft Edge
 "InAppSupportEnabled"=dword:00000000;In-app support Enabled,Disabled,\Microsoft Edge
 "MicrosoftEdgeInsiderPromotionEnabled"=dword:00000000;Microsoft Edge Insider Promotion Enabled,Disabled,\Microsoft Edge
-"PerformanceDetectorEnabled"=dword:00000000;Performance Detector Enabled,Disabled,\Microsoft Edge\Performance
-"PinBrowserEssentialsToolbarButton"=dword:00000000;Pin browser essentials toolbar button,Disabled,\Microsoft Edge\Performance
 "DiagnosticData"=dword:00000000;Send required and optional diagnostic data about browser usage,Enabled,\Microsoft Edge
-"DefaultShareAdditionalOSRegionSetting"=dword:00000002;Set the default "share additional operating system region" setting,Enabled,\Microsoft Edge
-"EdgeShoppingAssistantEnabled"=dword:00000000;Shopping in Microsoft Edge Enabled,Disabled,\Microsoft Edge
-"ShowMicrosoftRewards"=dword:00000000;Show Microsoft Rewards experiences,Disabled,\Microsoft Edge
 "ShowHistoryThumbnails"=dword:00000000;Show thumbnail images for browsing history,Disabled,\Microsoft Edge
 "ShowAcrobatSubscriptionButton"=dword:00000000;Shows button on native PDF viewer in Microsoft Edge that allows users to sign up for Adobe Acrobat subscription,Disabled,\Microsoft Edge
-"AlternateErrorPagesEnabled"=dword:00000000;Suggest similar pages when a webpage can't be found,Disabled,\Microsoft Edge
 "TextPredictionEnabled"=dword:00000000;Text prediction enabled by default,Disabled,\Microsoft Edge
-"VisualSearchEnabled"=dword:00000000;Visual search enabled,Disabled,\Microsoft Edge
-"WalletDonationEnabled"=dword:00000000;Wallet Donation Enabled,Disabled,\Microsoft Edge
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge\Recommended]
+"AlternateErrorPagesEnabled"=dword:00000000;Suggest similar pages when a webpage can't be found,Disabled,\Microsoft Edge - Default Settings (users can override)
+"BackgroundModeEnabled"=dword:00000000;Continue running background apps after Microsoft Edge closes,Disabled,\Microsoft Edge - Default Settings (users can override)
+"BlockThirdPartyCookies"=dword:00000000;Block third party cookies,Disabled,\Microsoft Edge - Default Settings (users can override)
+"DefaultShareAdditionalOSRegionSetting"=dword:00000002;Set the default "share additional operating system region" setting,Enabled,\Microsoft Edge - Default Settings (users can override)
+"Edge3PSerpTelemetryEnabled"=dword:00000000;Edge 3P SERP Telemetry Enabled,Disabled,\Microsoft Edge - Default Settings (users can override)
+"EdgeWalletEtreeEnabled"=dword:00000000;Edge Wallet E-Tree Enabled,Disabled,\Microsoft Edge - Default Settings (users can override)
+"EdgeShoppingAssistantEnabled"=dword:00000000;Shopping in Microsoft Edge Enabled,Disabled,\Microsoft Edge - Default Settings (users can override)
+"LocalBrowserDataShareEnabled"=dword:00000000;Enable Windows to search local Microsoft Edge browsing data,Disabled,\Microsoft Edge - Default Settings (users can override)
+"NetworkPredictionOptions"=dword:00000002;Enable network prediction,Enabled,\Microsoft Edge - Default Settings (users can override)
+"SearchSuggestEnabled"=dword:00000000;Enable search suggestions,Disabled,\Microsoft Edge - Default Settings (users can override)
+"ShowMicrosoftRewards"=dword:00000000;Show Microsoft Rewards experiences,Disabled,\Microsoft Edge - Default Settings (users can override)
+"VisualSearchEnabled"=dword:00000000;Visual search enabled,Disabled,\Microsoft Edge - Default Settings (users can override)
+"WalletDonationEnabled"=dword:00000000;Wallet Donation Enabled,Disabled,\Microsoft Edge - Default Settings (users can override)
+"TyposquattingCheckerEnabled"=dword:00000000;Configure Edge Website Typo Protection,Disabled,\Microsoft Edge - Default Settings (users can override)\Edge Website Typo Protection settings
+"GamerModeEnabled"=dword:00000000;Enable Gamer Mode,Disabled,\Microsoft Edge - Default Settings (users can override)\Games settings
+"EfficiencyModeEnabled"=dword:00000000;Efficiency mode enabled,Disabled,\Microsoft Edge - Default Settings (users can override)\Performance
+"PerformanceDetectorEnabled"=dword:00000000;Performance Detector Enabled,Disabled,\Microsoft Edge - Default Settings (users can override)\Performance
+"PinBrowserEssentialsToolbarButton"=dword:00000000;Pin browser essentials toolbar button,Disabled,\Microsoft Edge - Default Settings (users can override)\Performance
+"StartupBoostEnabled"=dword:00000000;Enable startup boost,Disabled,\Microsoft Edge - Default Settings (users can override)\Performance
+"SleepingTabsEnabled"=dword:00000000;Configure sleeping tabs,Disabled,\Microsoft Edge - Default Settings (users can override)\Sleeping tabs settings
+"NewTabPagePrerenderEnabled"=dword:00000000;Enable preload of the new tab page for faster rendering,Disabled,\Microsoft Edge - Default Settings (users can override)\Startup, home page and new tab page
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
 "AllowOnlineTips"=dword:00000000;Allow Online Tips,Disabled,\Administrative Templates\Control Panel
@@ -206,7 +207,6 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 "MultiTaskingAltTabFilter"=dword:00000003;System > Multitasking > Pressing Alt+Tab shows windows that are open on (Open windows only)
 "Start_AccountNotifications"=dword:00000000;Personalization > Start > Show account-related notifications. When off, required notifications are still shown.
-"Start_TrackDocs"=dword:00000000;Personalization > Start > Show recently opened items in Jump Lists on Start or the taskbar and in File Explorer Quick Access
 "TaskbarGlomLevel"=dword:00000002;Personalization > Taskbar > Combine taskbar buttons (Never)
 "ShowTaskViewButton"=dword:00000000;Taskbar context menu > Show task view button
 "Hidden"=dword:00000001;File Explorer Options > View > Show hidden files, folders, and drives
@@ -233,7 +233,7 @@ Windows Registry Editor Version 5.00
 "NotifyOnWeakCharger"=dword:00000000;Devices > USB > Notify me if my PC is charging slowly over USB
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]
-"AutoConfigURL"="https://p.thenewone.lol:8443/proxy.pac";Network & Internet > Proxy > Script address
+"AutoConfigURL"="https://p.thenewone.lol:8443/proxy.pac";Network & Internet > Proxy
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize]
 "EnableTransparency"=dword:00000000;Personalization > Colors > Transparency effects
@@ -284,7 +284,7 @@ Windows Registry Editor Version 5.00
 "DownloadMode"=dword:00000000;Update & Security > Delivery Optimization > Allow downloads from other PCs
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\DontShowMeThisDialogAgain]
-"{948e51fb-0a48-44f0-86ac-33c36def540c}"="NO";Control Panel > Programs and Features uninstall confirmation prompt box
+"{948e51fb-0a48-44f0-86ac-33c36def540c}"="NO";Control Panel > Programs and Features > Uninstall confirmation prompt box
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\TaskManager]
 "Preferences"=hex:0d,00,00,00,60,00,00,00,60,00,00,00,9c,00,00,00,9c,00,00,00,\

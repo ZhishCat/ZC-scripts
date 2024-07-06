@@ -11,7 +11,6 @@ powercfg /h off
 bcdedit /deletevalue useplatformclock
 bcdedit /set {current} quietboot yes
 setx TEMP C:\TEMP & setx TEMP C:\TEMP /m & setx TMP C:\TEMP & setx TMP C:\TEMP /m
-netsh advfirewall set allprofiles state off
 netsh interface ipv4 set dnsservers "Ethernet" static 8.8.8.8 primary
 netsh interface ipv4 add dnsservers "Ethernet" 8.8.4.4 index=2
 schtasks /change /disable /tn "\Microsoft\Windows\Application Experience\AitAgent"
@@ -26,11 +25,11 @@ schtasks /change /disable /tn "Microsoft\Windows\Customer Experience Improvement
 schtasks /change /disable /tn "Microsoft\Windows\Customer Experience Improvement Program\Uploader"
 schtasks /change /disable /tn "Microsoft\Windows\Customer Experience Improvement Program\UsbCeip"
 for /f "skip=2 tokens=1,2*" %%I in ('%SystemRoot%\System32\reg.exe query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v ProductName 2^>nul') do if /i "%%I" == "ProductName" set "WindowsProduct=%%K"
-if "%WindowsProduct%"=="Windows 7 Professional" (reg import Win7-Pro-settings.reg)
+if "%WindowsProduct%"=="Windows 7 Professional" (reg import "Win7 Professional.reg")
 if "%WindowsProduct%"=="Windows Embedded 8.1 Industry Pro" (
-reg import Win8-Embedded-Industry-Pro-settings.reg
+reg import "Win8 Embedded Industry Pro.reg"
 cscript %WINDIR%\System32\slmgr.vbs /ipk M9Q9P-WNJJT-6PXPY-DWX8H-6XWKK
 cscript %WINDIR%\System32\slmgr.vbs /skms kms8.msguides.com
 cscript %WINDIR%\System32\slmgr.vbs /ato
 )
-if "%WindowsProduct%"=="Windows 10 Enterprise LTSC 2021" (reg import Win10-LTSC-2021-settings.reg)
+if "%WindowsProduct%"=="Windows 10 Enterprise LTSC 2021" (reg import "Win10 Enterprise LTSC 2021.reg")
