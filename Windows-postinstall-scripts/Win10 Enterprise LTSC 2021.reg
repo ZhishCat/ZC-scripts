@@ -132,9 +132,6 @@ Windows Registry Editor Version 5.00
 "AllowTelemetry"=dword:00000000;Allow Telemetry,Enabled,\Administrative Templates\Windows Components\Data Collection and Preview Builds
 "DoNotShowFeedbackNotifications"=dword:00000001;Do not show feedback notifications,Enabled,\Administrative Templates\Windows Components\Data Collection and Preview Builds
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DWM]
-"DisallowAnimations"=dword:00000001;Do not allow window animations,Enabled,\Administrative Templates\Windows Components\Desktop Window Manager
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\EdgeUI]
 "DisableHelpSticker"=dword:00000001;Disable help tips,Enabled,\Administrative Templates\Windows Components\Edge UI
 "DisableMFUTracking"=dword:00000001;Turn off tracking of app usage,Enabled,\Administrative Templates\Windows Components\Edge UI

@@ -54,9 +54,6 @@ Windows Registry Editor Version 5.00
 "DisableInventory"=dword:00000001;Turn off Inventory Collector,Enabled,\Administrative Templates\Windows Components\Application Compatibility
 "DisablePCA"=dword:00000001;Turn off Program Compatibility Assistant,Enabled,\Administrative Templates\Windows Components\Application Compatibility
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DWM]
-"DisallowAnimations"=dword:00000001;Do not allow window animations,Enabled,\Administrative Templates\Windows Components\Desktop Window Manager
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3]
 "1806"=dword:00000000;Show security warning for potentially unsafe files,Enabled,\Administrative Templates\Windows Components\Internet Explorer\Internet Explorer Control Panel\Security Page\Internet Zone
 
