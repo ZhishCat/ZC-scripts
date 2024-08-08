@@ -13,17 +13,6 @@ bcdedit /set {current} quietboot yes
 setx TEMP C:\TEMP & setx TEMP C:\TEMP /m & setx TMP C:\TEMP & setx TMP C:\TEMP /m
 netsh interface ipv4 set dnsservers "Ethernet" static 8.8.8.8 primary
 netsh interface ipv4 add dnsservers "Ethernet" 8.8.4.4 index=2
-schtasks /change /disable /tn "\Microsoft\Windows\Application Experience\AitAgent"
-schtasks /change /disable /tn "\Microsoft\Windows\Application Experience\Microsoft Compatibility Appraiser"
-schtasks /change /disable /tn "\Microsoft\Windows\Application Experience\PcaPatchDbTask"
-schtasks /change /disable /tn "\Microsoft\Windows\Application Experience\ProgramDataUpdater"
-schtasks /change /disable /tn "\Microsoft\Windows\Application Experience\StartupAppTask"
-schtasks /change /disable /tn "Microsoft\Windows\Customer Experience Improvement Program\BthSQM"
-schtasks /change /disable /tn "Microsoft\Windows\Customer Experience Improvement Program\Consolidator"
-schtasks /change /disable /tn "Microsoft\Windows\Customer Experience Improvement Program\KernelCeipTask"
-schtasks /change /disable /tn "Microsoft\Windows\Customer Experience Improvement Program\ScheduleWepCEIP"
-schtasks /change /disable /tn "Microsoft\Windows\Customer Experience Improvement Program\Uploader"
-schtasks /change /disable /tn "Microsoft\Windows\Customer Experience Improvement Program\UsbCeip"
 for /f "skip=2 tokens=1,2*" %%I in ('%SystemRoot%\System32\reg.exe query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v ProductName 2^>nul') do if /i "%%I" == "ProductName" set "WindowsProduct=%%K"
 if "%WindowsProduct%"=="Windows 7 Professional" (reg import "Win7 Professional.reg")
 if "%WindowsProduct%"=="Windows Embedded 8.1 Industry Pro" (

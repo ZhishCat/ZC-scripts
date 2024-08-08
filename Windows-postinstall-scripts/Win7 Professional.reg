@@ -50,8 +50,6 @@ Windows Registry Editor Version 5.00
 "DisabledByGroupPolicy"=dword:00000001;Turn off the advertising ID,Enabled,\Administrative Templates\System\User Profiles
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat]
-"AITEnable"=dword:00000000;Turn off Application Telemetry,Enabled,\Administrative Templates\Windows Components\Application Compatibility
-"DisableInventory"=dword:00000001;Turn off Inventory Collector,Enabled,\Administrative Templates\Windows Components\Application Compatibility
 "DisablePCA"=dword:00000001;Turn off Program Compatibility Assistant,Enabled,\Administrative Templates\Windows Components\Application Compatibility
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3]
@@ -64,7 +62,11 @@ Windows Registry Editor Version 5.00
 "LimitSystemRestoreCheckpointing"=dword:00000001;Turn off creation of System Restore checkpoints,Enabled,\Administrative Templates\Windows Components\Windows Installer
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
-"NoAutoUpdate"=dword:00000001;Configure Automatic Updates,Disabled,\Administrative Templates\Windows Components\Windows Update
+"NoAutoUpdate"=dword:00000000;Configure Automatic Updates,Enabled,\Administrative Templates\Windows Components\Windows Update
+"AUOptions"=dword:00000003;Configure automatic updating: 3 - Auto download and notify for install
+"ScheduledInstallDay"=dword:00000000;0 - Every day
+"ScheduledInstallTime"=dword:00000000;00:00
+"ScheduledInstallEveryWeek"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MRT]
 "DontOfferThroughWUAU"=dword:00000001;Do not offer Microsoft Malicious Software Removal Tool through Automatic Updates for Windows Update
