@@ -1,4 +1,5 @@
 Windows Registry Editor Version 5.00
+;Compatible with Windows 10 Enterprise 2022
 ;GPO - Computer Configuration;
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
 "ShowRecommendationsEnabled"=dword:00000000;Allow feature recommendations and browser assistance notifications from Microsoft Edge,Disabled,\Microsoft Edge
@@ -231,6 +232,9 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]
 "AutoConfigURL"="https://p.thenewone.lol:8443/proxy.pac";Network & Internet > Proxy
+
+[HKEY_LOCAL_MACHINE\SYSTEM\Maps]
+"AutoUpdateEnabled"=dword:00000000;Apps > Offline maps > Automatically update maps
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize]
 "EnableTransparency"=dword:00000000;Personalization > Colors > Transparency effects
