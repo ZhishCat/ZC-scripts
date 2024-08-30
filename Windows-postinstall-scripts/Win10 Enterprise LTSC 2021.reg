@@ -13,8 +13,6 @@ Windows Registry Editor Version 5.00
 "SpotlightExperiencesAndRecommendationsEnabled"=dword:00000000;Choose whether users can receive customized background images and text, suggestions, notifications, and tips for Microsoft services,Disabled,\Microsoft Edge\Content settings
 "InternetExplorerIntegrationLevel"=dword:00000000;Configure Internet Explorer integration,Enabled,\Microsoft Edge
 "DnsOverHttpsMode"="off";Control the mode of DNS-over-HTTPS,Enabled,\Microsoft Edge
-"CryptoWalletEnabled"=dword:00000000;Enable CryptoWallet feature,Disabled,\Microsoft Edge
-"EdgeFollowEnabled"=dword:00000000;Enable Follow service in Microsoft Edge,Disabled,\Microsoft Edge
 "PromotionalTabsEnabled"=dword:00000000;Enable full-tab promotional content,Disabled,\Microsoft Edge
 "AddressBarMicrosoftSearchInBingProviderEnabled"=dword:00000000;Enable Microsoft Search in Bing suggestions in the address bar,Disabled,\Microsoft Edge
 "TabServicesEnabled"=dword:00000000;Enable tab organization suggestions,Disabled,\Microsoft Edge
