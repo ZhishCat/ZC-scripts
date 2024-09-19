@@ -19,4 +19,5 @@ cscript %WINDIR%\System32\slmgr.vbs /ipk M9Q9P-WNJJT-6PXPY-DWX8H-6XWKK
 cscript %WINDIR%\System32\slmgr.vbs /skms kms8.msguides.com
 cscript %WINDIR%\System32\slmgr.vbs /ato
 )
+if "%WindowsProduct%"=="Windows 10 Enterprise" (reg import "Win10 Enterprise LTSC 2021.reg")
 if "%WindowsProduct%"=="Windows 10 Enterprise LTSC 2021" (reg import "Win10 Enterprise LTSC 2021.reg")
