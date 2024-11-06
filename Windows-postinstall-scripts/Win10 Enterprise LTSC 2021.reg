@@ -193,6 +193,9 @@ Windows Registry Editor Version 5.00
 "DisableWindowsSpotlightWindowsWelcomeExperience"=dword:00000001;Turn off the Windows Welcome Experience,Enabled,\Windows Components\Cloud Content
 
 ;SETTINGS;
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\PushNotifications]
+"ToastEnabled"=dword:00000000;Get notifications from apps and other senders
+
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\UserProfileEngagement]
 "ScoobeSystemSettingEnabled"=dword:00000000;System > Notifications & actions > Suggest ways I can finish setting up my device to get the most out of Windows
 
@@ -227,9 +230,6 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Shell\USB]
 "NotifyOnUsbErrors"=dword:00000000;Devices > USB > Notify me if there are issues connecting to USB devices
 "NotifyOnWeakCharger"=dword:00000000;Devices > USB > Notify me if my PC is charging slowly over USB
-
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]
-"AutoConfigURL"="https://p.thenewone.lol:8443/proxy.pac";Network & Internet > Proxy
 
 [HKEY_LOCAL_MACHINE\SYSTEM\Maps]
 "AutoUpdateEnabled"=dword:00000000;Apps > Offline maps > Automatically update maps
