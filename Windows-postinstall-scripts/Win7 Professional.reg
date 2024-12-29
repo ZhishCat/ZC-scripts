@@ -4,9 +4,6 @@ Windows Registry Editor Version 5.00
 "ForceClassicControlPanel"=dword:00000001;Always open All Control Panel Items when opening Control Panel,Disabled,\Administrative Templates\Control Panel
 "NoStartMenuMFUprogramslist"=dword:00000001;Remove frequent programs list from the Start Menu,Enabled,\Administrative Templates\Start Menu and Taskbar
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Control Panel\International]
-"BlockCleanupOfUnusedPreinstalledLangPacks"=dword:00000001;Block clean-up of unused language packs,Enabled,\Administrative Templates\Control Panel\Regional and Language Options
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile]
 "EnableFirewall"=dword:00000000;Windows Defender Firewall: Protect all network connections,Disabled,\Administrative Templates\Network\Network Connections\Windows Defender Firewall\Domain Profile
 
