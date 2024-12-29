@@ -43,9 +43,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WDI\{9c5a40da-b965-4fc3-8781-88dd50a6299d}]
 "ScenarioExecutionEnabled"=dword:00000000;Enable/Disable PerfTrack,Disabled,\Administrative Templates\System\Troubleshooting and Diagnostics\Windows Performance PerfTrack
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AdvertisingInfo]
-"DisabledByGroupPolicy"=dword:00000001;Turn off the advertising ID,Enabled,\Administrative Templates\System\User Profiles
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat]
 "DisablePCA"=dword:00000001;Turn off Program Compatibility Assistant,Enabled,\Administrative Templates\Windows Components\Application Compatibility
 
