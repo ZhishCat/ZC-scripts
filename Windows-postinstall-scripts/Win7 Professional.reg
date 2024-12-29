@@ -95,9 +95,6 @@ Windows Registry Editor Version 5.00
 "HideFileExt"=dword:00000000;Folder Options > View > Hide extensions for known file types
 "TaskbarGlomLevel"=dword:00000002;Taskbar context menu > Properties > Taskbar buttons: Never combine
 
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]
-"AutoConfigURL"="https://p.thenewone.lol:8443/proxy.pac";Internet Options > Connections > LAN settings > Use automatic configuration script
-
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
 "EnableAutoTray"=dword:00000000;Notification Area Icons > Always show all icons and notifications on the taskbar
 

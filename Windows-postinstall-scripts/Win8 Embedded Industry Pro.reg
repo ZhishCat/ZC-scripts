@@ -73,13 +73,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Installer]
 "LimitSystemRestoreCheckpointing"=dword:00000001;Turn off creation of System Restore checkpoints,Enabled,\Administrative Templates\Windows Components\Windows Installer
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
-"NoAutoUpdate"=dword:00000000;Configure Automatic Updates,Enabled,\Administrative Templates\Windows Components\Windows Update
-"AUOptions"=dword:00000003;Configure automatic updating: 3 - Auto download and notify for install
-"ScheduledInstallDay"=dword:00000000;0 - Every day
-"ScheduledInstallTime"=dword:00000000;00:00
-"ScheduledInstallEveryWeek"=dword:00000001
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MRT]
 "DontOfferThroughWUAU"=dword:00000001;Do not offer Microsoft Malicious Software Removal Tool through Automatic Updates for Windows Update
 
@@ -110,9 +103,6 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Control Panel\International\User Profile]
 "HttpAcceptLanguageOptOut"=dword:00000001;Privacy > General > Let websites provide locally relevant content by accessing my language list
-
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]
-"AutoConfigURL"="https://p.thenewone.lol:8443/proxy.pac";Network > Proxy > Use automatic configuration script
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]
 "TimeZoneKeyName"="Saratov Standard Time";Time and language > Date and time > Time zone

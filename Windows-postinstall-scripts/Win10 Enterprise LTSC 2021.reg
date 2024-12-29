@@ -165,13 +165,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Systray]
 "HideSystray"=dword:00000001;Hide Windows Security Systray,Enabled,\Administrative Templates\Windows Components\Windows Security\Systray
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
-"NoAutoUpdate"=dword:00000000;Configure Automatic Updates,Enabled,\Administrative Templates\Windows Components\Windows Update
-"AUOptions"=dword:00000003;Configure automatic updating: 3 - Auto download and notify for install
-"ScheduledInstallDay"=dword:00000000;0 - Every day
-"ScheduledInstallTime"=dword:00000000;00:00
-"ScheduledInstallEveryWeek"=dword:00000001
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
 "ExcludeWUDriversInQualityUpdate"=dword:00000001;Do not include drivers with Windows Updates,Enabled,\Administrative Templates\Windows Components\Windows Update
 "TargetReleaseVersion"=dword:00000001;Select the target Feature Update version,\Windows Components\Windows Update\Windows Update for Business
