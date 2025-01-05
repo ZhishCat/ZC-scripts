@@ -1,14 +1,15 @@
-cd /d "%~DP0"
 %1 start "" mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd.exe","/c pushd ""%~DP0"" && ""%~S0"" ::","","runas",1)(window.close)&&exit
-powercfg /s 381b4222-f694-41f0-9685-ff5bb260df2e
-powercfg /x monitor-timeout-ac 10
-powercfg /x monitor-timeout-dc 10
-powercfg /x standby-timeout-ac 0
-powercfg /x standby-timeout-dc 0
-powercfg /setacvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 7516b95f-f776-4464-8c53-06167f40cc99 17aaa29b-8b43-4b94-aafe-35f64daaf1ee 0
-powercfg /setdcvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 7516b95f-f776-4464-8c53-06167f40cc99 17aaa29b-8b43-4b94-aafe-35f64daaf1ee 0
-powercfg /h off
-bcdedit /deletevalue useplatformclock
+powercfg /s 381b4222-f694-41f0-9685-ff5bb260df2e && rem ;Control Panel > Power Options > Balanced (recommended)
+powercfg /x monitor-timeout-ac 10 && rem ;Control Panel > Power Options > Choose when to turn off the display > Turn off the display: 10 minutes
+powercfg /x monitor-timeout-dc 10 && rem ;Control Panel > Power Options > Choose when to turn off the display > Turn off the display: 10 minutes
+powercfg /x standby-timeout-ac 0 && rem ;Control Panel > Power Options > Change when the computer sleeps > Put the computer to sleep: Never
+powercfg /x standby-timeout-dc 0 && rem ;Control Panel > Power Options > Change when the computer sleeps > Put the computer to sleep: Never
+powercfg /x disk-timeout-ac 0 && rem ;Control Panel > Power Options > Balanced (recommended) > Change plan settings > Change advanced power settings > Hard disk > Turn off hard disk after > Setting: Never
+powercfg /x disk-timeout-dc 0 && rem ;Control Panel > Power Options > Balanced (recommended) > Change plan settings > Change advanced power settings > Hard disk > Turn off hard disk after > Setting: Never
+powercfg /setdcvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 7516b95f-f776-4464-8c53-06167f40cc99 17aaa29b-8b43-4b94-aafe-35f64daaf1ee 0 && rem ;Control Panel > Power Options > Balanced (recommended) > Change plan settings > Change advanced power settings > Display > Dim display after > On battery: Never
+powercfg /setacvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 7516b95f-f776-4464-8c53-06167f40cc99 17aaa29b-8b43-4b94-aafe-35f64daaf1ee 0 && rem ;Control Panel > Power Options > Balanced (recommended) > Change plan settings > Change advanced power settings > Display > Dim display after > Plugged in: Never
+powercfg /h off && rem ;Disables the hibernate feature
+bcdedit /deletevalue useplatformclock && ;Turn off High Precision Event Timer
 netsh interface ipv4 set dnsservers "Ethernet" static 8.8.8.8 primary
 netsh interface ipv4 add dnsservers "Ethernet" 8.8.4.4 index=2
 rem ;Local Group Policy Editor - Computer Configuration;
@@ -196,6 +197,8 @@ reg add "HKCU\SOFTWARE\Microsoft\InputPersonalization" /v "RestrictImplicitInkCo
 reg add "HKCU\SOFTWARE\Microsoft\InputPersonalization" /v "RestrictImplicitTextCollection" /t REG_DWORD /d "1" /f && rem ;Privacy > Inking & typing personalization > Use your typing history and handwriting patterns to create a personal dictionary that makes better suggestions for you.
 reg add "HKCU\SOFTWARE\Microsoft\InputPersonalization\TrainedDataStore" /v "HarvestContacts" /t REG_DWORD /d "0" /f && rem ;Privacy > Inking & typing personalization > Use your typing history and handwriting patterns to create a personal dictionary that makes better suggestions for you.
 reg add "HKCU\SOFTWARE\Microsoft\Personalization\Settings" /v "AcceptedPrivacyPolicy" /t REG_DWORD /d "0" /f && rem ;Privacy > Inking & typing personalization > Use your typing history and handwriting patterns to create a personal dictionary that makes better suggestions for you.
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications" /v "GlobalUserDisabled" /t REG_DWORD /d "1" /f && rem ;Privacy > Background apps > Let apps run in the background
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" /v "BackgroundAppGlobalToggle" /t REG_DWORD /d "0" /f && rem ;Privacy > Background apps > Let apps run in the background
 reg add "HKU\S-1-5-20\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Settings" /v "DownloadMode" /t REG_DWORD /d "0" /f && rem ;Update & Security > Delivery Optimization > Allow downloads from other PCs
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /v "ShowFrequent" /t REG_DWORD /d "0" /f && rem ;File Explorer Options > General > Show frequently used folders in Quick access
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" /v "SearchboxTaskbarMode" /t REG_DWORD /d "0" /f && rem ;Taskbar context menu > Search > Hidden
