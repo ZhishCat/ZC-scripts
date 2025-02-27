@@ -51,7 +51,6 @@ reg add "HKCU\Control Panel\International" /v "sShortTime" /t REG_SZ /d "HH:mm" 
 reg add "HKCU\Control Panel\International" /v "sTimeFormat" /t REG_SZ /d "HH:mm:ss" /f
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "Hidden" /t REG_DWORD /d "1" /f && rem ;File Explorer Options > View > Show hidden files, folders, and drives
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "HideFileExt" /t REG_DWORD /d "0" /f && rem ;File Explorer Options > View > Hide extensions for known file types
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "LaunchTo" /t REG_DWORD /d "1" /f && rem ;File Explorer Options > General > Open File Explorer to: This PC
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\DontShowMeThisDialogAgain" /v "{948e51fb-0a48-44f0-86ac-33c36def540c}" /t REG_SZ /d "NO" /f && rem ;Control Panel > Programs and Features > Uninstall confirmation prompt box
 for /f "skip=2 tokens=1,2*" %%I in ('%SystemRoot%\System32\reg.exe query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v ProductName 2^>nul') do if /i "%%I" == "ProductName" set "WindowsProduct=%%K"
 if "%WindowsProduct%"=="Windows Embedded 8.1 Industry Pro" goto Win8Embedded
@@ -199,6 +198,7 @@ reg add "HKCU\SOFTWARE\Microsoft\Personalization\Settings" /v "AcceptedPrivacyPo
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications" /v "GlobalUserDisabled" /t REG_DWORD /d "1" /f && rem ;Privacy > Background apps > Let apps run in the background
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" /v "BackgroundAppGlobalToggle" /t REG_DWORD /d "0" /f && rem ;Privacy > Background apps > Let apps run in the background
 reg add "HKU\S-1-5-20\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Settings" /v "DownloadMode" /t REG_DWORD /d "0" /f && rem ;Update & Security > Delivery Optimization > Allow downloads from other PCs
+reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "LaunchTo" /t REG_DWORD /d "1" /f && rem ;File Explorer Options > General > Open File Explorer to: This PC
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /v "ShowFrequent" /t REG_DWORD /d "0" /f && rem ;File Explorer Options > General > Show frequently used folders in Quick access
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" /v "SearchboxTaskbarMode" /t REG_DWORD /d "0" /f && rem ;Taskbar context menu > Search > Hidden
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "ShowTaskViewButton" /t REG_DWORD /d "0" /f && rem ;Taskbar context menu > Show task view button
