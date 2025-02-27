@@ -9,7 +9,6 @@ powercfg /x disk-timeout-dc 0 && rem ;Control Panel > Power Options > Balanced (
 powercfg /setdcvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 7516b95f-f776-4464-8c53-06167f40cc99 17aaa29b-8b43-4b94-aafe-35f64daaf1ee 0 && rem ;Control Panel > Power Options > Balanced (recommended) > Change plan settings > Change advanced power settings > Display > Dim display after > On battery: Never
 powercfg /setacvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 7516b95f-f776-4464-8c53-06167f40cc99 17aaa29b-8b43-4b94-aafe-35f64daaf1ee 0 && rem ;Control Panel > Power Options > Balanced (recommended) > Change plan settings > Change advanced power settings > Display > Dim display after > Plugged in: Never
 powercfg /h off && rem ;Disables the hibernate feature
-bcdedit /deletevalue useplatformclock && rem ;Turn off High Precision Event Timer
 netsh interface ipv4 set dnsservers "Ethernet" static 8.8.8.8 primary
 netsh interface ipv4 add dnsservers "Ethernet" 8.8.4.4 index=2
 rem ;Local Group Policy Editor - Computer Configuration;
@@ -43,7 +42,6 @@ rem ;SETTINGS; (Win10 Descriptions)
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers" /v "DisableAutoplay" /t REG_DWORD /d "1" /f && rem ;Devices > AutoPlay > Use AutoPlay for all media and devices
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel" /v "{645FF040-5081-101B-9F08-00AA002F954E}" /t REG_DWORD /d "1" /f && rem ;Personalization > Themes > Desktop icon settings > Recycle Bin
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "Start_TrackDocs" /t REG_DWORD /d "0" /f && rem ;Personalization > Start > Show recently opened items in Jump Lists on Start or the taskbar and in File Explorer Quick Access
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "TaskbarGlomLevel" /t REG_DWORD /d "2" /f && rem ;Personalization > Taskbar > Combine taskbar buttons: Never
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /v "EnableAutoTray" /t REG_DWORD /d "0" /f && rem ;Personalization > Taskbar > Select which icons appear on the taskbar > Always show all icons in the notification area
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation" /v "TimeZoneKeyName" /t REG_SZ /d "Azerbaijan Standard Time"
 reg add "HKCU\Control Panel\International" /v "iFirstDayOfWeek" /t REG_SZ /d "0" /f
@@ -59,6 +57,7 @@ for /f "skip=2 tokens=1,2*" %%I in ('%SystemRoot%\System32\reg.exe query "HKEY_L
 if "%WindowsProduct%"=="Windows Embedded 8.1 Industry Pro" goto Win8Embedded
 if "%WindowsProduct%"=="Windows 10 Enterprise" goto Win10Enterprise2022
 if "%WindowsProduct%"=="Windows 10 Enterprise LTSC 2021" goto Win10Enterprise2022
+exit
 
 :Win8Embedded
 cscript %WINDIR%\System32\slmgr.vbs /ipk M9Q9P-WNJJT-6PXPY-DWX8H-6XWKK
