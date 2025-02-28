@@ -59,9 +59,6 @@ if "%WindowsProduct%"=="Windows 10 Enterprise LTSC 2021" goto Win10Enterprise202
 exit
 
 :Win8Embedded
-cscript %WINDIR%\System32\slmgr.vbs /ipk M9Q9P-WNJJT-6PXPY-DWX8H-6XWKK
-cscript %WINDIR%\System32\slmgr.vbs /skms kms8.msguides.com
-cscript %WINDIR%\System32\slmgr.vbs /ato
 rem ;Local Group Policy Editor - Computer Configuration;
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "NoConnectedUser" /t REG_DWORD /d "3" /f && rem ;Accounts: Block Microsoft accounts,\Windows Settings\Security Settings\Local Policies\Security Options
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Control Panel\International" /v "BlockCleanupOfUnusedPreinstalledLangPacks" /t REG_DWORD /d "1" /f && rem ;Block clean-up of unused language packs,Enabled,\Administrative Templates\Control Panel\Regional and Language Options
