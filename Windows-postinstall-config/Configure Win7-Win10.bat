@@ -82,7 +82,6 @@ exit
 
 :Win10Enterprise2022
 rem ;Local Group Policy Editor - Computer Configuration;
-reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "NoConnectedUser" /t REG_DWORD /d "3" /f && rem ;Accounts: Block Microsoft accounts,\Windows Settings\Security Settings\Local Policies\Security Options
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge" /v "ShowRecommendationsEnabled" /t REG_DWORD /d "0" /f && rem ;Allow feature recommendations and browser assistance notifications from Microsoft Edge,Disabled,\Microsoft Edge
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge" /v "ShowPDFDefaultRecommendationsEnabled" /t REG_DWORD /d "0" /f && rem ;Allow notifications to set Microsoft Edge as default PDF reader,Disabled,\Microsoft Edge\Content settings
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge" /v "PersonalizationReportingEnabled" /t REG_DWORD /d "0" /f && rem ;Allow personalization of ads, Microsoft Edge, search, news and other Microsoft services by sending browsing history, favorites and collections, usage and other browsing data to Microsoft,Disabled,\Microsoft Edge
@@ -129,6 +128,7 @@ reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge\Recommended" /v "PinBrowserEssent
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge\Recommended" /v "StartupBoostEnabled" /t REG_DWORD /d "0" /f && rem ;Enable startup boost,Disabled,\Microsoft Edge - Default Settings (users can override)\Performance
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge\Recommended" /v "SleepingTabsEnabled" /t REG_DWORD /d "0" /f && rem ;Configure sleeping tabs,Disabled,\Microsoft Edge - Default Settings (users can override)\Sleeping tabs settings
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge\Recommended" /v "NewTabPagePrerenderEnabled" /t REG_DWORD /d "0" /f && rem ;Enable preload of the new tab page for faster rendering,Disabled,\Microsoft Edge - Default Settings (users can override)\Startup, home page and new tab page
+reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "NoConnectedUser" /t REG_DWORD /d "3" /f && rem ;Accounts: Block Microsoft accounts,\Windows Settings\Security Settings\Local Policies\Security Options
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v "AllowOnlineTips" /t REG_DWORD /d "0" /f && rem ;Allow Online Tips,Disabled,\Administrative Templates\Control Panel
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Control Panel\International" /v "BlockCleanupOfUnusedPreinstalledLangPacks" /t REG_DWORD /d "1" /f && rem ;Block clean-up of unused language packs,Enabled,\Administrative Templates\Control Panel\Regional and Language Options
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Explorer" /v "HideRecentlyAddedApps" /t REG_DWORD /d "1" /f && rem ;Remove "Recently added" list from Start Menu,Enabled,\Administrative Templates\Start Menu and Taskbar
