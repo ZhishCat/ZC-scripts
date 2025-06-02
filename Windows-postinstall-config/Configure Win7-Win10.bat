@@ -90,7 +90,7 @@ reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge" /v "SpotlightExperiencesAndRecom
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge" /v "InternetExplorerIntegrationLevel" /t REG_DWORD /d "0" /f && rem ;Configure Internet Explorer integration,Enabled,\Microsoft Edge
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge" /v "DnsOverHttpsMode" /t REG_SZ /d "off" /f && rem ;Control the mode of DNS-over-HTTPS,Enabled,\Microsoft Edge
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge" /v "PromotionalTabsEnabled" /t REG_DWORD /d "0" /f && rem ;Enable full-tab promotional content,Disabled,\Microsoft Edge
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge" /v "AddressBarMicrosoftSearchInBingProviderEnabled" /t REG_DWORD /d "0" /f && rem ;Enable Microsoft Search in Bing suggestions in the address bar,Disabled,\Microsoft Edge
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge" /v "AddressBarTrendingSuggestEnabled" /t REG_DWORD /d "0" /f && rem ;Enable Microsoft Bing trending suggestions in the address bar,Disabled,\Microsoft Edge
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge" /v "TabServicesEnabled" /t REG_DWORD /d "0" /f && rem ;Enable tab organization suggestions,Disabled,\Microsoft Edge
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge" /v "AIGenThemesEnabled" /t REG_DWORD /d "0" /f && rem ;Enables DALL-E themes generation,Disabled,\Microsoft Edge
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge" /v "DefaultBrowserSettingsCampaignEnabled" /t REG_DWORD /d "0" /f && rem ;Enables default browser settings campaigns,Disabled,\Microsoft Edge
