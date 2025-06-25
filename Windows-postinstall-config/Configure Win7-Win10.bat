@@ -46,7 +46,7 @@ reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandler
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel" /v "{645FF040-5081-101B-9F08-00AA002F954E}" /t REG_DWORD /d "1" /f && rem ;Personalization > Themes > Desktop icon settings > Recycle Bin
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "Start_TrackDocs" /t REG_DWORD /d "0" /f && rem ;Personalization > Start > Show recently opened items in Jump Lists on Start or the taskbar and in File Explorer Quick Access
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /v "EnableAutoTray" /t REG_DWORD /d "0" /f && rem ;Personalization > Taskbar > Select which icons appear on the taskbar > Always show all icons in the notification area
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation" /v "TimeZoneKeyName" /t REG_SZ /d "Arabian Standard Time"
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation" /v "TimeZoneKeyName" /t REG_SZ /d "UTC"
 reg add "HKCU\Control Panel\International" /v "iFirstDayOfWeek" /t REG_SZ /d "0" /f
 reg add "HKCU\Control Panel\International" /v "sShortDate" /t REG_SZ /d "yyyy-MM-dd" /f
 reg add "HKCU\Control Panel\International" /v "sLongDate" /t REG_SZ /d "MMMM d, yyyy" /f
