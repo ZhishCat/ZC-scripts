@@ -1,5 +1,5 @@
 # Scripts made by ZhishCat
-### It's mostly data combined from the following websites:
+### It's mostly pieces of data from the following sources:
 + https://www.sevenforums.com/
 + https://www.eightforums.com/
 + https://www.tenforums.com/
