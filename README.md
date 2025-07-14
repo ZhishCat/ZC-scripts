@@ -8,5 +8,3 @@
 + https://www.elevenforum.com/
 + https://admx.help/
 + https://stackoverflow.com/
-
-Complex implementations were blatantly stolen from Stack Overflow.
