@@ -62,6 +62,7 @@ rem ;Local Group Policy Editor - Computer Configuration;
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge" /v "ShowRecommendationsEnabled" /t REG_DWORD /d "0" /f && rem ;Allow feature recommendations and browser assistance notifications from Microsoft Edge,Disabled,\Microsoft Edge
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge" /v "ShowPDFDefaultRecommendationsEnabled" /t REG_DWORD /d "0" /f && rem ;Allow notifications to set Microsoft Edge as default PDF reader,Disabled,\Microsoft Edge\Content settings
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge" /v "PersonalizationReportingEnabled" /t REG_DWORD /d "0" /f && rem ;Allow personalization of ads, Microsoft Edge, search, news and other Microsoft services by sending browsing history, favorites and collections, usage and other browsing data to Microsoft,Disabled,\Microsoft Edge
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge" /v "UserFeedbackAllowed" /t REG_DWORD /d "0" /f && rem ;Allow user feedback,Disabled,\Microsoft Edge
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge" /v "PaymentMethodQueryEnabled" /t REG_DWORD /d "0" /f && rem ;Allow websites to query for available payment methods,Disabled,\Microsoft Edge
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge" /v "TrackingPrevention" /t REG_DWORD /d "0" /f && rem ;Block tracking of users' web-browsing activity,Enabled,\Microsoft Edge
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge" /v "BrowserSignin" /t REG_DWORD /d "0" /f && rem ;Browser sign-in settings,Enabled,\Microsoft Edge
