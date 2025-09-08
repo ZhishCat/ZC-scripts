@@ -1,7 +1,5 @@
 %1 start "" mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd.exe","/c pushd ""%~DP0"" && ""%~S0"" ::","","runas",1)(window.close)&&exit
 powercfg /s 381b4222-f694-41f0-9685-ff5bb260df2e && rem ;Control Panel > Power Options > Balanced (recommended)
-powercfg /x monitor-timeout-ac 10 && rem ;Control Panel > Power Options > Choose when to turn off the display > Turn off the display: 10 minutes
-powercfg /x monitor-timeout-dc 10 && rem ;Control Panel > Power Options > Choose when to turn off the display > Turn off the display: 10 minutes
 powercfg /x standby-timeout-ac 0 && rem ;Control Panel > Power Options > Change when the computer sleeps > Put the computer to sleep: Never
 powercfg /x standby-timeout-dc 0 && rem ;Control Panel > Power Options > Change when the computer sleeps > Put the computer to sleep: Never
 powercfg /x disk-timeout-ac 0 && rem ;Control Panel > Power Options > Balanced (recommended) > Change plan settings > Change advanced power settings > Hard disk > Turn off hard disk after > Setting: Never
