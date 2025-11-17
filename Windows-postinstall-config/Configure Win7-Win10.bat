@@ -9,6 +9,7 @@ powercfg /setacvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 7516b95f-f776-446
 powercfg /h off && rem ;Disables the hibernate feature
 netsh interface ipv4 set dnsservers "Ethernet" static 8.8.8.8 primary
 netsh interface ipv4 add dnsservers "Ethernet" 8.8.4.4 index=2
+tzutil /s "UTC" && rem Sets timezone to UTC
 
 rem ;Local Group Policy Editor - Computer Configuration;
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "ConsentPromptBehaviorAdmin" /t REG_DWORD /d "0" /f && rem ;User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode,Elevate without prompting,\Windows Settings\Security Settings\Local Policies\Security Options
@@ -44,7 +45,6 @@ reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandler
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel" /v "{645FF040-5081-101B-9F08-00AA002F954E}" /t REG_DWORD /d "1" /f && rem ;Personalization > Themes > Desktop icon settings > Recycle Bin
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "Start_TrackDocs" /t REG_DWORD /d "0" /f && rem ;Personalization > Start > Show recently opened items in Jump Lists on Start or the taskbar and in File Explorer Quick Access
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /v "EnableAutoTray" /t REG_DWORD /d "0" /f && rem ;Personalization > Taskbar > Select which icons appear on the taskbar > Always show all icons in the notification area
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation" /v "TimeZoneKeyName" /t REG_SZ /d "UTC"
 reg add "HKCU\Control Panel\International" /v "iFirstDayOfWeek" /t REG_SZ /d "0" /f
 reg add "HKCU\Control Panel\International" /v "sShortDate" /t REG_SZ /d "yyyy-MM-dd" /f
 reg add "HKCU\Control Panel\International" /v "sLongDate" /t REG_SZ /d "MMMM d, yyyy" /f
