@@ -9,7 +9,7 @@ powercfg /setacvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 7516b95f-f776-446
 powercfg /h off && rem ;Disables the hibernate feature
 netsh interface ipv4 set dnsservers "Ethernet" static 8.8.8.8 primary
 netsh interface ipv4 add dnsservers "Ethernet" 8.8.4.4 index=2
-tzutil /s "UTC" && rem Sets timezone to UTC
+tzutil /s "UTC" && rem ;Sets timezone to UTC
 
 rem ;Local Group Policy Editor - Computer Configuration;
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "ConsentPromptBehaviorAdmin" /t REG_DWORD /d "0" /f && rem ;User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode,Elevate without prompting,\Windows Settings\Security Settings\Local Policies\Security Options
